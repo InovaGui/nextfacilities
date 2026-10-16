@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Download App Android | Next Facilities - Colaborador & Supervisor</title>
-  <meta name="description" content="Baixe o aplicativo oficial Next Facilities para Android. Marcação de ponto por localização, tarefas recorrentes e extras, rondas/postos e comprovação por evidências fotográficas." />
+  <title>Download Oficial dos Aplicativos Android | Next Facilities</title>
+  <meta name="description" content="Baixe os aplicativos oficiais Next Facilities para Android: Operacional (Colaborador & Supervisor) e Gestão (Coordenador & Admin). Postos com Geofencing, tarefas recorrentes e extras, rondas e dashboards gerenciais." />
   <link rel="canonical" href="https://nextfacilities.inovagui.com.br/" />
   
   <!-- Favicon -->
@@ -12,8 +12,8 @@
   <link rel="apple-touch-icon" href="assets/icons/logo-icon.png" />
   
   <!-- Open Graph / Redes Sociais -->
-  <meta property="og:title" content="Download App Next Facilities - Colaborador & Supervisor" />
-  <meta property="og:description" content="Gestão operacional em campo: ponto eletrônico, tarefas recorrentes e extras, rondas/postos e evidências fotográficas." />
+  <meta property="og:title" content="Download Aplicativos Next Facilities - Operacional & Gestão" />
+  <meta property="og:description" content="Operações em campo e gestão central: postos com Geofencing, tarefas recorrentes e extras, rondas com QR Code, evidências fotográficas e dashboards gerenciais." />
   <meta property="og:image" content="https://nextfacilities.inovagui.com.br/assets/images/logo-vertical.png" />
   <meta property="og:url" content="https://nextfacilities.inovagui.com.br/" />
   <meta property="og:type" content="website" />
@@ -22,6 +22,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -147,168 +150,182 @@
         <img src="assets/icons/logo-icon.png" alt="Ícone Next Facilities" class="w-8 h-8 sm:w-10 sm:h-10 object-contain drop-shadow-md group-hover:scale-105 transition-transform" />
         <div class="flex flex-col">
           <span class="text-lg sm:text-xl font-extrabold tracking-tight leading-none text-white">NEXT <span class="brand-gradient-text">FACILITIES</span></span>
-          <span class="text-[9px] sm:text-[10px] uppercase font-bold tracking-widest text-slate-400 mt-0.5">Operações & Equipes</span>
+          <span class="text-[9px] sm:text-[10px] uppercase font-bold tracking-widest text-slate-400 mt-0.5">Operações & Gestão</span>
         </div>
       </a>
 
-      <!-- Links no Desktop (Espaçamento Otimizado para não encavalar) -->
-      <nav class="hidden lg:flex items-center gap-4 xl:gap-7 text-xs xl:text-sm font-medium text-slate-300">
+      <!-- Links no Desktop (Espaçamento Otimizado com margem generosa para nunca encavalar) -->
+      <nav class="hidden lg:flex items-center gap-4 xl:gap-6 text-xs xl:text-sm font-medium text-slate-300">
         <a href="#download" class="text-orange-400 font-bold hover:text-orange-300 transition-colors">Download</a>
         <a href="#postos-geofencing" class="hover:text-orange-400 transition-colors flex items-center gap-1.5 text-amber-300 font-semibold whitespace-nowrap">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
           Postos & Geofencing
         </a>
         <a href="#recursos" class="hover:text-orange-400 transition-colors">Recursos</a>
+        <a href="#gestao" class="hover:text-orange-400 transition-colors flex items-center gap-1 text-sky-300 font-semibold">
+          <i class="bi bi-shield-lock-fill text-sky-400 text-xs"></i>
+          Gestão & Admin
+        </a>
         <a href="#evidencias" class="hover:text-orange-400 transition-colors">Evidências</a>
         <a href="#primeiro-acesso" class="hover:text-orange-400 transition-colors whitespace-nowrap">Primeiro Acesso</a>
-        <a href="#instalacao" class="hover:text-orange-400 transition-colors whitespace-nowrap">Como Instalar</a>
+        <a href="#instalacao" class="hover:text-orange-400 transition-colors whitespace-nowrap">Instalação</a>
         <a href="#faq" class="hover:text-orange-400 transition-colors">Dúvidas</a>
       </nav>
 
-      <!-- Botão Superior de Download (Com Espaçamento Exclusivo e Divisor Visual Elegante) -->
-      <div class="flex items-center gap-3 flex-shrink-0 ml-auto lg:ml-6 xl:ml-8 lg:pl-6 xl:pl-8 lg:border-l lg:border-white/10">
-        <a href="next-facilities-operacional-v1.0.0.apk" download="next-facilities-operacional-v1.0.0.apk" class="hidden sm:inline-flex items-center gap-2 brand-gradient-bg text-white font-bold text-xs uppercase tracking-wider px-4 sm:px-5 py-2.5 rounded-full shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all flex-shrink-0">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
-          </svg>
-          <span>Baixar APK (97 MB)</span>
-        </a>
+      <!-- Botão Superior de Download (Com Divisor Visual Elegante e Espaçamento Dedicado) -->
+      <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0 ml-auto lg:ml-6 xl:ml-8 lg:pl-6 xl:pl-8 lg:border-l lg:border-white/10">
+        
+        <!-- Dropdown / Botões de Download Direto no Topo -->
+        <div class="hidden sm:flex items-center gap-2">
+          <a href="next-facilities-operacional-v1.0.0.apk" download="next-facilities-operacional-v1.0.0.apk" class="inline-flex items-center gap-1.5 brand-gradient-bg text-white font-bold text-xs uppercase tracking-wider px-3.5 py-2.5 rounded-xl shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all flex-shrink-0" title="Baixar APK Operacional (Colaborador e Supervisor)">
+            <i class="bi bi-download text-sm"></i>
+            <span>Operacional (97.5M)</span>
+          </a>
+          <a href="next-facilities-gestao-v1.0.0.apk" download="next-facilities-gestao-v1.0.0.apk" class="inline-flex items-center gap-1.5 bg-slate-800 hover:bg-slate-700 text-sky-300 border border-sky-500/30 font-bold text-xs uppercase tracking-wider px-3.5 py-2.5 rounded-xl shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all flex-shrink-0" title="Baixar APK Gestão (Coordenador, Gestor e Admin)">
+            <i class="bi bi-shield-lock text-sm text-sky-400"></i>
+            <span>Gestão (101.8M)</span>
+          </a>
+        </div>
 
         <!-- Botão Menu Mobile -->
         <button id="mobileMenuBtn" aria-label="Abrir menu" class="lg:hidden text-slate-300 hover:text-white p-2 rounded-xl bg-white/5 border border-white/10 active:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
-          </svg>
+          <i class="bi bi-list text-2xl"></i>
         </button>
       </div>
     </div>
 
-    <!-- Menu Dropdown no Mobile Aprimorado -->
+    <!-- Menu Dropdown no Mobile -->
     <div id="mobileMenu" class="hidden lg:hidden border-t border-white/10 bg-[#0e1420]/98 px-5 py-4 space-y-2.5 backdrop-blur-2xl shadow-2xl">
       <a href="#download" class="flex items-center gap-3 p-2.5 rounded-xl bg-orange-500/10 text-orange-400 font-bold text-sm">
-        <svg class="w-4 h-4 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-        <span>Baixar Aplicativo Operacional</span>
+        <i class="bi bi-download text-orange-400 text-base"></i>
+        <span>Download dos Aplicativos</span>
       </a>
 
       <a href="#postos-geofencing" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 text-amber-300 font-bold text-sm">
         <div class="flex items-center gap-3">
-          <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+          <i class="bi bi-geo-alt-fill text-emerald-400 text-base"></i>
           <span>Postos & Geofencing</span>
         </div>
         <span class="text-[9px] uppercase font-extrabold px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300">Maior Vantagem</span>
       </a>
 
       <a href="#recursos" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 text-slate-200 font-medium text-sm">
-        <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"/></svg>
+        <i class="bi bi-grid-1x2-fill text-slate-400 text-base"></i>
         <span>Recursos e Tarefas</span>
       </a>
 
+      <a href="#gestao" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 text-sky-300 font-bold text-sm">
+        <div class="flex items-center gap-3">
+          <i class="bi bi-shield-lock-fill text-sky-400 text-base"></i>
+          <span>Gestão & Coordenação</span>
+        </div>
+        <span class="text-[9px] uppercase font-extrabold px-1.5 py-0.5 rounded bg-sky-500/20 text-sky-300">Admin</span>
+      </a>
+
       <a href="#evidencias" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 text-slate-200 font-medium text-sm">
-        <svg class="w-4 h-4 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"/></svg>
+        <i class="bi bi-camera-fill text-orange-400 text-base"></i>
         <span>Evidências Fotográficas</span>
       </a>
 
       <a href="#primeiro-acesso" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 text-slate-200 font-medium text-sm">
-        <svg class="w-4 h-4 text-sky-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+        <i class="bi bi-person-vcard-fill text-sky-400 text-base"></i>
         <span>Primeiro Acesso (CPF)</span>
       </a>
 
       <a href="#instalacao" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 text-slate-200 font-medium text-sm">
-        <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+        <i class="bi bi-phone-fill text-emerald-400 text-base"></i>
         <span>Como Instalar no Android</span>
       </a>
 
       <a href="#faq" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 text-slate-200 font-medium text-sm">
-        <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"/></svg>
+        <i class="bi bi-question-circle-fill text-slate-400 text-base"></i>
         <span>Dúvidas Frequentes</span>
       </a>
 
-      <!-- Botão com Divisor no Menu Mobile para não ficar colado com Dúvidas -->
-      <div class="pt-4 mt-2 border-t border-white/10">
-        <a href="next-facilities-operacional-v1.0.0.apk" download="next-facilities-operacional-v1.0.0.apk" class="w-full flex items-center justify-center gap-2 brand-gradient-bg text-white font-extrabold text-sm py-3.5 rounded-2xl shadow-xl shadow-orange-500/20 active:scale-[0.98] transition-all">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
-          </svg>
-          Baixar APK v1.0.0 (97.5 MB)
+      <!-- Botões de Ação no Menu Mobile -->
+      <div class="pt-4 mt-2 border-t border-white/10 space-y-2">
+        <a href="next-facilities-operacional-v1.0.0.apk" download="next-facilities-operacional-v1.0.0.apk" class="w-full flex items-center justify-center gap-2 brand-gradient-bg text-white font-extrabold text-sm py-3 rounded-xl shadow-xl shadow-orange-500/20 active:scale-[0.98] transition-all">
+          <i class="bi bi-person-badge-fill text-base"></i>
+          <span>Baixar Operacional (97.5 MB)</span>
+        </a>
+        <a href="next-facilities-gestao-v1.0.0.apk" download="next-facilities-gestao-v1.0.0.apk" class="w-full flex items-center justify-center gap-2 bg-slate-800 text-sky-300 border border-sky-500/30 font-extrabold text-sm py-3 rounded-xl active:scale-[0.98] transition-all">
+          <i class="bi bi-shield-lock-fill text-base text-sky-400"></i>
+          <span>Baixar Gestão / Admin (101.8 MB)</span>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- CONTEÚDO PRINCIPAL (HERO FOCADO NO DOWNLOAD E 100% RESPONSIVO) -->
+  <!-- CONTEÚDO PRINCIPAL -->
   <main class="relative z-10">
-    <section id="download" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:pt-16 sm:pb-20">
+    <section id="download" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:pt-14 sm:pb-20">
       
-      <!-- Seletor de Perfil do Aplicativo (Segmented Control Ergonômico no Mobile) -->
+      <!-- Seletor Interativo de Aplicativo (Segmented Control Ergonômico) -->
       <div class="flex flex-col items-center justify-center mb-6 sm:mb-8">
-        <div class="inline-flex p-1 sm:p-1.5 rounded-2xl bg-slate-900/90 border border-white/10 shadow-xl backdrop-blur-md max-w-sm sm:max-w-md w-full">
-          <button class="flex-1 flex items-center justify-center gap-1.5 sm:gap-2 py-2 sm:py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-bold brand-gradient-bg text-white shadow-md transition-all">
-            <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-            </svg>
-            <span>Colaborador & Supervisor</span>
-            <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <div class="inline-flex p-1 sm:p-1.5 rounded-2xl bg-slate-900/90 border border-white/10 shadow-xl backdrop-blur-md max-w-md sm:max-w-lg w-full">
+          
+          <!-- Botão Aba Operacional -->
+          <button id="tabOperacionalBtn" onclick="switchAppTab('operacional')" class="flex-1 flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-bold brand-gradient-bg text-white shadow-md transition-all">
+            <i class="bi bi-person-badge-fill text-sm"></i>
+            <span>Operacional</span>
+            <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400 animate-pulse"></span>
           </button>
           
-          <button onclick="showGestaoModal()" class="flex-1 flex items-center justify-center gap-1.5 py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-200 transition-colors">
-            <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-            </svg>
-            <span>Gestão</span>
-            <span class="text-[9px] font-extrabold px-1.5 py-0.5 rounded-full bg-slate-800 text-amber-400 border border-amber-500/20">Em breve</span>
+          <!-- Botão Aba Gestão -->
+          <button id="tabGestaoBtn" onclick="switchAppTab('gestao')" class="flex-1 flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-200 transition-all">
+            <i class="bi bi-shield-lock-fill text-sm"></i>
+            <span>Gestão & Admin</span>
+            <span class="text-[9px] font-extrabold px-1.5 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/30">v1.0.0</span>
           </button>
+
         </div>
       </div>
 
       <!-- Centro de Download Oficial (Layout Centralizado e Responsivo) -->
-      <div class="max-w-4xl mx-auto text-center space-y-5 sm:space-y-7">
+      <div class="max-w-4xl mx-auto text-center space-y-5 sm:space-y-6">
         
-        <!-- Selo de Destaque das Vantagens -->
-        <div class="inline-flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/25 text-orange-400 text-[11px] sm:text-xs font-semibold tracking-wide">
+        <!-- Selo de Destaque das Vantagens (Com Ícones Bootstrap) -->
+        <div class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-3 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/25 text-orange-400 text-[11px] sm:text-xs font-semibold tracking-wide">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>📍 Postos & Geofencing</span>
+          <span class="inline-flex items-center gap-1"><i class="bi bi-geo-alt-fill text-emerald-400"></i> Postos & Geofencing</span>
           <span class="text-slate-600 hidden xs:inline">•</span>
-          <span>⚡ Tarefas Recorrentes & Extras</span>
+          <span class="inline-flex items-center gap-1"><i class="bi bi-lightning-charge-fill text-amber-400"></i> Tarefas Recorrentes & Extras</span>
           <span class="text-slate-600 hidden xs:inline">•</span>
-          <span>📸 Evidências</span>
+          <span class="inline-flex items-center gap-1"><i class="bi bi-camera-fill text-orange-400"></i> Evidências Fotográficas</span>
         </div>
 
-        <!-- Título Principal com Escala Tipográfica Otimizada para Celular -->
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.18]">
+        <!-- Título Principal Dinâmico -->
+        <h1 id="heroTitle" class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.18]">
           Baixe o App Operacional do <br class="hidden sm:inline" />
           <span class="brand-gradient-text">Next Facilities</span>
         </h1>
 
-        <!-- Descrição Clara e Objetiva -->
-        <p class="text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal px-2 sm:px-0">
+        <!-- Descrição Clara e Dinâmica -->
+        <p id="heroDescription" class="text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal px-2 sm:px-0">
           A maior vantagem em campo: <strong>postos com Geofencing</strong> (raio de segurança autorizado), execução de <strong>tarefas recorrentes e extras</strong>, rondas com QR Code e comprovação por <strong>evidências fotográficas</strong>.
         </p>
 
-        <!-- Card Central de Download (Foco Total, Ergonomia Touch e Ações Imediatas) -->
+        <!-- Card Central de Download Dinâmico -->
         <div class="p-5 sm:p-9 rounded-2xl sm:rounded-[32px] glass-card border-orange-500/30 relative overflow-hidden shadow-2xl space-y-5 sm:space-y-6">
           <div class="absolute -right-24 -top-24 w-72 h-72 bg-orange-500/15 rounded-full blur-3xl pointer-events-none"></div>
           <div class="absolute -left-24 -bottom-24 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
           <div class="relative z-10 flex flex-col items-center gap-5 sm:gap-6">
             
-            <!-- Botão Principal de Download (Full Width no Mobile com Toque Confortável) -->
+            <!-- Botão Principal de Download -->
             <a href="next-facilities-operacional-v1.0.0.apk" download="next-facilities-operacional-v1.0.0.apk" id="heroDownloadBtn" class="group relative w-full sm:w-auto inline-flex items-center justify-center gap-3.5 sm:gap-4 brand-gradient-bg text-white font-extrabold text-base sm:text-xl py-4 sm:py-5 px-6 sm:px-10 rounded-2xl shadow-2xl shadow-orange-500/35 hover:shadow-orange-500/50 hover:scale-[1.01] active:scale-[0.98] transition-all overflow-hidden">
               <div class="absolute inset-0 w-1/2 h-full bg-white/20 skew-x-12 -translate-x-full group-hover:translate-x-[300%] transition-transform duration-1000"></div>
               
               <!-- Ícone do Android -->
-              <svg class="w-7 h-7 sm:w-8 sm:h-8 text-white flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9996.4482.9996.9993.0001.5511-.4486.9997-.9996.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9996.4482.9996.9993 0 .5511-.4485.9997-.9996.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.4128 13.8533 8.0808 12 8.0808c-1.8534 0-3.5902.332-5.1368.8689L4.841 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396"/>
-              </svg>
+              <i class="bi bi-android2 text-3xl sm:text-4xl text-white flex-shrink-0"></i>
 
               <div class="text-left">
-                <div class="text-[10px] sm:text-xs uppercase tracking-wider font-extrabold text-orange-100 leading-none">Download Direto APK Oficial</div>
-                <div class="text-lg sm:text-2xl leading-tight font-extrabold mt-0.5">Baixar APK Android (97.5 MB)</div>
+                <div id="btnSubtext" class="text-[10px] sm:text-xs uppercase tracking-wider font-extrabold text-orange-100 leading-none">Download Oficial • Versão Operacional</div>
+                <div id="btnMaintext" class="text-lg sm:text-2xl leading-tight font-extrabold mt-0.5">Baixar APK Operacional (97.5 MB)</div>
               </div>
 
               <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-white/20 flex items-center justify-center ml-1 sm:ml-2 group-hover:translate-y-0.5 transition-transform flex-shrink-0">
-                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
-                </svg>
+                <i class="bi bi-download text-lg sm:text-xl text-white"></i>
               </div>
             </a>
 
@@ -316,66 +333,60 @@
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 w-full">
               
               <!-- Copiar Link Oficial -->
-              <button onclick="copyDownloadLink()" id="copyLinkBtn" class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-orange-500/10 hover:bg-orange-500/20 active:bg-orange-500/25 border border-orange-500/30 text-orange-300 font-semibold text-xs sm:text-sm transition-all">
-                <svg class="w-4 h-4 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-3.03a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/>
-                </svg>
+              <button onclick="copyCurrentDownloadLink()" id="copyLinkBtn" class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-orange-500/10 hover:bg-orange-500/20 active:bg-orange-500/25 border border-orange-500/30 text-orange-300 font-semibold text-xs sm:text-sm transition-all">
+                <i class="bi bi-link-45deg text-base text-orange-400 flex-shrink-0"></i>
                 <span id="copyLinkText">Copiar Link do APK</span>
               </button>
 
               <!-- Primeiro Acesso -->
               <a href="#primeiro-acesso" class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white/5 hover:bg-white/10 active:bg-white/15 border border-white/10 text-slate-200 font-semibold text-xs sm:text-sm transition-all">
-                <svg class="w-4 h-4 text-sky-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
-                </svg>
+                <i class="bi bi-person-vcard text-base text-sky-400 flex-shrink-0"></i>
                 <span>Primeiro Acesso (CPF)</span>
               </a>
 
               <!-- Como Instalar -->
               <a href="#instalacao" class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white/5 hover:bg-white/10 active:bg-white/15 border border-white/10 text-slate-200 font-semibold text-xs sm:text-sm transition-all">
-                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
-                </svg>
+                <i class="bi bi-info-circle text-base text-emerald-400 flex-shrink-0"></i>
                 <span>Como Instalar APK</span>
               </a>
 
             </div>
 
-            <!-- Dica Mobile Rápida (Exibida apenas no Celular) -->
+            <!-- Dica Mobile Rápida com Ícone Bootstrap -->
             <div class="sm:hidden w-full p-3.5 rounded-xl bg-slate-950/70 border border-white/10 text-left flex items-start gap-3">
-              <div class="w-7 h-7 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center flex-shrink-0 mt-0.5 font-bold text-xs">
-                📲
+              <div class="w-8 h-8 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i class="bi bi-phone-vibrate text-base"></i>
               </div>
               <div class="text-[11px] leading-snug text-slate-300">
                 <span class="text-white font-bold block mb-0.5">Dica para o seu Smartphone:</span>
-                Ao baixar, toque no arquivo baixado na sua barra de notificações e selecione <em>"Permitir desta fonte"</em> caso o Android solicite.
+                Ao baixar, toque no arquivo baixado na barra de notificações e selecione <em>"Permitir desta fonte"</em> caso o Android solicite.
               </div>
             </div>
 
             <!-- Metadados e Garantias -->
             <div class="pt-2 flex flex-wrap items-center justify-center gap-2 sm:gap-6 text-[11px] sm:text-xs text-slate-400 border-t border-white/5 w-full">
               <span class="inline-flex items-center gap-1.5 font-medium">
-                <svg class="w-3.5 h-3.5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <i class="bi bi-shield-check text-emerald-400 text-sm"></i>
                 Hospedagem: <strong class="text-slate-200 font-mono">nextfacilities.inovagui.com.br</strong>
               </span>
               <span class="inline-flex items-center gap-1.5 font-medium">
-                <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg>
+                <i class="bi bi-phone text-blue-400 text-sm"></i>
                 Android 8.0+
               </span>
               <span class="inline-flex items-center gap-1.5 font-medium">
-                <svg class="w-3.5 h-3.5 text-orange-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-                com.inovagui.nextfacilities
+                <i class="bi bi-file-earmark-check text-orange-400 text-sm"></i>
+                <span id="packageBadge">com.inovagui.nextfacilities</span>
               </span>
             </div>
 
-            <!-- QR Code para Desktop (Oculto em telas de celular) -->
+            <!-- QR Code para Desktop com Alternância Dinâmica -->
             <div class="hidden sm:flex items-center gap-4 p-4 rounded-2xl bg-slate-950/70 border border-white/5 max-w-md w-full text-left">
               <div class="w-20 h-20 bg-white p-1.5 rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
                 <img id="qrCodeImg" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fnextfacilities.inovagui.com.br%2Fnext-facilities-operacional-v1.0.0.apk" alt="QR Code para Download" class="w-full h-full object-contain" />
               </div>
               <div class="space-y-1">
                 <div class="text-xs font-bold text-white flex items-center gap-2">
-                  <span>Baixar Direto no Celular</span>
+                  <span id="qrCodeLabel">Baixar Operacional no Celular</span>
                   <span class="text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-orange-500/20 text-orange-400">QR Code</span>
                 </div>
                 <p class="text-[11px] text-slate-400 leading-snug">
@@ -387,32 +398,63 @@
           </div>
         </div>
 
-        <!-- Banner com a Tríade de Diferenciais Operacionais -->
-        <div class="p-4 sm:p-5 rounded-2xl badge-highlight max-w-3xl mx-auto flex flex-col sm:flex-row items-center gap-3.5 sm:gap-4 text-center sm:text-left">
-          <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold flex-shrink-0">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
-            </svg>
+        <!-- Vitrine Direta dos 2 Aplicativos Lado a Lado (Acesso Instantâneo) -->
+        <div class="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+          
+          <!-- Card Operacional -->
+          <div class="p-5 rounded-2xl glass-card border-orange-500/30 hover:border-orange-500/50 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30 flex items-center gap-1.5">
+                  <i class="bi bi-person-badge text-xs"></i>
+                  Colaborador & Supervisor
+                </span>
+                <span class="text-xs font-mono text-slate-400">97.5 MB • v1.0.0</span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1">Next Facilities Operacional</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Destinado à equipe em campo: marcação de ponto por Geofencing no raio do posto, geração de tarefas recorrentes na entrada, chamados extras e registro de evidências fotográficas.
+              </p>
+            </div>
+            <a href="next-facilities-operacional-v1.0.0.apk" download="next-facilities-operacional-v1.0.0.apk" class="w-full inline-flex items-center justify-center gap-2 brand-gradient-bg text-white font-bold text-xs uppercase py-2.5 px-4 rounded-xl shadow-md hover:scale-[1.01] transition-all">
+              <i class="bi bi-download"></i>
+              <span>Baixar Operacional (97.5 MB)</span>
+            </a>
           </div>
-          <div>
-            <div class="text-[11px] sm:text-xs uppercase tracking-wider font-extrabold text-orange-300">Diferencial Estrutural em Campo</div>
-            <p class="text-xs sm:text-sm text-slate-200 mt-0.5 leading-relaxed">
-              <strong>Postos com Geofencing & Tarefas Recorrentes:</strong> O ponto e as rondas só são liberados no raio exato do posto físico. As tarefas do dia são geradas no mesmo instante da entrada com suporte a demandas extras imediatas!
-            </p>
+
+          <!-- Card Gestão -->
+          <div class="p-5 rounded-2xl glass-card border-sky-500/30 hover:border-sky-500/50 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/30 flex items-center gap-1.5">
+                  <i class="bi bi-shield-lock text-xs"></i>
+                  Coordenador, Gestor & Admin
+                </span>
+                <span class="text-xs font-mono text-slate-400">101.8 MB • v1.0.0</span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1">Next Facilities Gestão & Coordenação</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Destinado à liderança: parametrização de postos e raios de Geofencing, gestão de contratos, painel em tempo real de turnos abertos, aprovação de tarefas extras e auditoria macro.
+              </p>
+            </div>
+            <a href="next-facilities-gestao-v1.0.0.apk" download="next-facilities-gestao-v1.0.0.apk" class="w-full inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-sky-300 border border-sky-500/40 font-bold text-xs uppercase py-2.5 px-4 rounded-xl shadow-md hover:scale-[1.01] transition-all">
+              <i class="bi bi-download"></i>
+              <span>Baixar Gestão / Admin (101.8 MB)</span>
+            </a>
           </div>
+
         </div>
 
       </div>
 
     </section>
 
-    <!-- NÚMEROS E INDICADORES RÁPIDOS (Ergonomia Aprimorada no Mobile) -->
+    <!-- NÚMEROS E INDICADORES RÁPIDOS -->
     <section class="border-y border-white/5 bg-slate-950/60 py-8 sm:py-10 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center">
           
-          <div class="p-3.5 sm:p-4 rounded-2xl glass-card border-orange-500/20">
+          <div class="p-3.5 sm:p-4 rounded-2xl glass-card border-emerald-500/20">
             <div class="text-2xl sm:text-4xl font-extrabold brand-gradient-text">Geofencing</div>
             <div class="text-xs sm:text-sm font-semibold text-slate-200 mt-1">Raio do Posto</div>
             <div class="text-[10px] sm:text-[11px] text-slate-400 mt-0.5">100% validado por satélite</div>
@@ -430,10 +472,10 @@
             <div class="text-[10px] sm:text-[11px] text-orange-400/80 mt-0.5">Fotos auditáveis na nuvem</div>
           </div>
 
-          <div class="p-3.5 sm:p-4 rounded-2xl glass-card">
-            <div class="text-2xl sm:text-4xl font-extrabold text-sky-400">Rondas</div>
-            <div class="text-xs sm:text-sm font-semibold text-slate-200 mt-1">Postos de Controle</div>
-            <div class="text-[10px] sm:text-[11px] text-slate-400 mt-0.5">Check-in presencial seguro</div>
+          <div class="p-3.5 sm:p-4 rounded-2xl glass-card border-sky-500/20">
+            <div class="text-2xl sm:text-4xl font-extrabold text-sky-400">2 Apps</div>
+            <div class="text-xs sm:text-sm font-semibold text-slate-200 mt-1">Operacional & Gestão</div>
+            <div class="text-[10px] sm:text-[11px] text-slate-400 mt-0.5">Ambientes 100% integrados</div>
           </div>
 
         </div>
@@ -458,7 +500,7 @@
         </p>
       </div>
 
-      <!-- Grid com os 2 Grandes Pilares: 1) Postos & Geofencing + 2) Tarefas Recorrentes e Extras -->
+      <!-- Grid com os 2 Grandes Pilares -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
         
         <!-- CARD PILAR 1: Postos & Geofencing (A Maior Vantagem) -->
@@ -466,16 +508,16 @@
           <div class="absolute -right-20 -top-20 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
           
           <div class="space-y-5 relative z-10">
-            <!-- Badge de Top Vantagem -->
             <div class="flex items-center justify-between">
               <span class="text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
                 Vantagem Principal #1
               </span>
-              <span class="text-xs font-mono text-slate-400">GPS Satélite</span>
+              <span class="text-xs font-mono text-slate-400 flex items-center gap-1">
+                <i class="bi bi-broadcast text-emerald-400"></i> GPS Satélite
+              </span>
             </div>
 
-            <!-- Título do Card -->
             <div>
               <h3 class="text-xl sm:text-2xl font-extrabold text-white">Postos com Geofencing Inteligente</h3>
               <p class="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
@@ -501,10 +543,10 @@
                 
                 <div class="relative z-10 flex flex-col items-center">
                   <div class="w-8 h-8 rounded-full brand-gradient-bg flex items-center justify-center text-white shadow-lg shadow-orange-500/40 font-bold">
-                    📍
+                    <i class="bi bi-geo-alt-fill text-white text-sm"></i>
                   </div>
-                  <span class="text-[10px] font-bold text-emerald-300 mt-1 bg-slate-950/90 px-2 py-0.5 rounded border border-emerald-500/30">
-                    Você está dentro do raio do posto ✅
+                  <span class="text-[10px] font-bold text-emerald-300 mt-1 bg-slate-950/90 px-2 py-0.5 rounded border border-emerald-500/30 flex items-center gap-1">
+                    Você está dentro do raio do posto <i class="bi bi-check-circle-fill text-emerald-400"></i>
                   </span>
                 </div>
               </div>
@@ -515,18 +557,18 @@
               </div>
             </div>
 
-            <!-- Lista de Benefícios de Geofencing -->
+            <!-- Lista de Benefícios de Geofencing com Ícones Bootstrap -->
             <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300">
               <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <i class="bi bi-check-circle-fill text-emerald-400 flex-shrink-0 mt-0.5"></i>
                 <span><strong>Presença Inquestionável:</strong> Bater ponto ou registrar ronda fora do posto físico é impossível. Zero divergências.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <i class="bi bi-check-circle-fill text-emerald-400 flex-shrink-0 mt-0.5"></i>
                 <span><strong>Rondas Auditadas por Posto:</strong> A equipe percorre os postos mapeados confirmando presença com leitura de QR Code e satélite.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <i class="bi bi-check-circle-fill text-emerald-400 flex-shrink-0 mt-0.5"></i>
                 <span><strong>Segurança Jurídica para Todos:</strong> Comprova o cumprimento real da jornada e protege o colaborador e a contratante.</span>
               </li>
             </ul>
@@ -534,7 +576,9 @@
 
           <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
             <span>Precisão: Alta acurácia GPS</span>
-            <span class="text-emerald-400 font-bold">100% Blindado</span>
+            <span class="text-emerald-400 font-bold flex items-center gap-1">
+              <i class="bi bi-shield-lock-fill"></i> 100% Blindado
+            </span>
           </div>
         </div>
 
@@ -543,16 +587,16 @@
           <div class="absolute -right-20 -top-20 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
           
           <div class="space-y-5 relative z-10">
-            <!-- Badge de Vantagem Seguidora -->
             <div class="flex items-center justify-between">
               <span class="text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30 flex items-center gap-1.5">
                 <span class="w-2 h-2 rounded-full bg-orange-400"></span>
                 Vantagem Essencial #2
               </span>
-              <span class="text-xs font-mono text-slate-400">Rotinas em Campo</span>
+              <span class="text-xs font-mono text-slate-400 flex items-center gap-1">
+                <i class="bi bi-list-task text-orange-400"></i> Rotinas em Campo
+              </span>
             </div>
 
-            <!-- Título do Card -->
             <div>
               <h3 class="text-xl sm:text-2xl font-extrabold text-white">Tarefas Recorrentes & Extras</h3>
               <p class="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
@@ -560,7 +604,7 @@
               </p>
             </div>
 
-            <!-- Simulação Visual das Tarefas -->
+            <!-- Simulação Visual das Tarefas com Ícones Bootstrap -->
             <div class="p-4 rounded-2xl bg-slate-950/80 border border-white/10 space-y-2.5">
               <div class="flex items-center justify-between text-xs pb-1 border-b border-white/5">
                 <span class="font-bold text-white">Painel de Atividades do Posto</span>
@@ -570,19 +614,25 @@
               <!-- Item 1: Tarefa Recorrente -->
               <div class="p-2.5 rounded-xl bg-white/5 flex items-center justify-between text-xs">
                 <div class="flex items-center gap-2">
-                  <span class="w-5 h-5 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold text-[10px]">🔄</span>
+                  <span class="w-6 h-6 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold text-xs">
+                    <i class="bi bi-arrow-repeat"></i>
+                  </span>
                   <div>
                     <div class="font-bold text-slate-200">Higienização e Check-in do Posto</div>
                     <div class="text-[10px] text-slate-400">Tarefa Recorrente • Diária</div>
                   </div>
                 </div>
-                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">Concluída (3 fotos)</span>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 flex items-center gap-1">
+                  <i class="bi bi-check-lg"></i> Concluída (3 fotos)
+                </span>
               </div>
 
               <!-- Item 2: Tarefa Extra -->
               <div class="p-2.5 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-between text-xs">
                 <div class="flex items-center gap-2">
-                  <span class="w-5 h-5 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-[10px]">🚨</span>
+                  <span class="w-6 h-6 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-xs">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                  </span>
                   <div>
                     <div class="font-bold text-white">Vistoria Emergencial no Gerador</div>
                     <div class="text-[10px] text-orange-300">Tarefa Extra • Solicitada pela Supervisão</div>
@@ -595,15 +645,15 @@
             <!-- Lista de Benefícios de Tarefas Recorrentes e Extras -->
             <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300">
               <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-orange-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <i class="bi bi-check-circle-fill text-orange-400 flex-shrink-0 mt-0.5"></i>
                 <span><strong>Geração Automática na Entrada:</strong> Sem formulários manuais. Bateu o ponto no posto, suas tarefas recorrentes aparecem prontas.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-orange-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span><strong>Tarefas Extras Imediatas:</strong> O cliente ou a supervisão precisam de um reforço ou atendimento pontual? O chamado chega no celular na mesma hora.</span>
+                <i class="bi bi-check-circle-fill text-orange-400 flex-shrink-0 mt-0.5"></i>
+                <span><strong>Tarefas Extras Imediatas:</strong> O cliente ou a coordenação precisam de um atendimento pontual? O chamado chega no celular na mesma hora.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-orange-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <i class="bi bi-check-circle-fill text-orange-400 flex-shrink-0 mt-0.5"></i>
                 <span><strong>Fechamento com Evidências:</strong> Registro fotográfico anexado em tempo real com data, hora e posto garantidos.</span>
               </li>
             </ul>
@@ -611,7 +661,9 @@
 
           <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
             <span>Sincronização: Tempo Real</span>
-            <span class="text-orange-400 font-bold">100% Integrado</span>
+            <span class="text-orange-400 font-bold flex items-center gap-1">
+              <i class="bi bi-cloud-check-fill"></i> 100% Integrado
+            </span>
           </div>
         </div>
 
@@ -619,7 +671,143 @@
 
     </section>
 
-    <!-- SEÇÃO PRINCIPAL DE RECURSOS -->
+    <!-- SEÇÃO NOVA DEDICADA: GESTÃO & ADMINISTRAÇÃO -->
+    <section id="gestao" class="border-t border-white/5 bg-slate-950/80 py-12 sm:py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-3">
+          <span class="inline-flex items-center gap-1.5 text-sky-400 text-xs font-extrabold uppercase tracking-widest bg-sky-500/10 px-3.5 py-1 rounded-full border border-sky-500/25">
+            <i class="bi bi-shield-lock-fill"></i>
+            Painel da Liderança
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+            Next Facilities Gestão: <br class="hidden sm:inline" />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-400">Controle Total de Postos, Contratos e Equipes</span>
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed px-2 sm:px-0">
+            Desenvolvido sob medida para <strong>Coordenadores, Gestores de Contratos e Administradores</strong>. Monitore indicadores em tempo real, configure cercas virtuais de Geofencing e audite todas as evidências com transparência absoluta.
+          </p>
+        </div>
+
+        <!-- Grade de Recursos da Gestão -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+          
+          <!-- Recurso Gestão 1 -->
+          <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-5 sm:p-7 flex flex-col justify-between border-sky-500/30">
+            <div>
+              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-sky-500/20 border border-sky-500/30 flex items-center justify-center text-sky-400 shadow-md mb-4">
+                <i class="bi bi-speedometer2 text-xl"></i>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Painel de Indicadores em Tempo Real</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Visão consolidada da operação: total de postos com equipe ativa, turnos em andamento, percentual de tarefas concluídas e alertas imediatos de ausência.
+              </p>
+            </div>
+            <div class="mt-5 pt-3.5 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-sky-400">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Dashboard executivo com métricas ao vivo</span>
+            </div>
+          </div>
+
+          <!-- Recurso Gestão 2 -->
+          <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-5 sm:p-7 flex flex-col justify-between border-emerald-500/30">
+            <div>
+              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shadow-md mb-4">
+                <i class="bi bi-geo-alt-fill text-xl"></i>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Parametrização de Postos & Geofencing</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Cadastre e edite postos físicos no mapa, definindo coordenadas de latitude/longitude e raio em metros para validação do ponto eletrônico e rondas.
+              </p>
+            </div>
+            <div class="mt-5 pt-3.5 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-emerald-400">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Cercas virtuais inteligentes personalizadas</span>
+            </div>
+          </div>
+
+          <!-- Recurso Gestão 3 -->
+          <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-5 sm:p-7 flex flex-col justify-between border-amber-500/30">
+            <div>
+              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400 shadow-md mb-4">
+                <i class="bi bi-clipboard-check-fill text-xl"></i>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Gestão de Contratos e Alocações</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Organize múltiplos clientes, contratos e filiais. Aloque colaboradores e supervisores nos turnos correspondentes com total controle de cobertura.
+              </p>
+            </div>
+            <div class="mt-5 pt-3.5 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-amber-400">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Distribuição dinâmica de escalas e efetivo</span>
+            </div>
+          </div>
+
+          <!-- Recurso Gestão 4 -->
+          <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-5 sm:p-7 flex flex-col justify-between border-orange-500/30">
+            <div>
+              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 shadow-md mb-4">
+                <i class="bi bi-lightning-charge-fill text-xl"></i>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Aprovação de Tarefas Extras</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Receba, avalie e aprove solicitações de serviços extras ou emergenciais enviadas pelos supervisores de campo ou solicitadas pelos clientes contratantes.
+              </p>
+            </div>
+            <div class="mt-5 pt-3.5 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-orange-400">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Workflow rápido de autorização de extras</span>
+            </div>
+          </div>
+
+          <!-- Recurso Gestão 5 -->
+          <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-5 sm:p-7 flex flex-col justify-between border-purple-500/30">
+            <div>
+              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 shadow-md mb-4">
+                <i class="bi bi-images text-xl"></i>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Auditoria de Evidências Fotográficas</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Consulte todas as fotos registradas pelas equipes em alta resolução, com data, hora e posto associados, prontas para apresentação em relatórios aos clientes.
+              </p>
+            </div>
+            <div class="mt-5 pt-3.5 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-purple-400">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Transparência e segurança jurídica irrefutável</span>
+            </div>
+          </div>
+
+          <!-- Recurso Gestão 6 -->
+          <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-5 sm:p-7 flex flex-col justify-between border-indigo-500/30">
+            <div>
+              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shadow-md mb-4">
+                <i class="bi bi-person-lock text-xl"></i>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Níveis de Permissão Hierárquicos</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Perfis restritos para Coordenador de Área, Gestor de Contratos e Administrador Geral, garantindo que cada usuário acesse apenas suas unidades autorizadas.
+              </p>
+            </div>
+            <div class="mt-5 pt-3.5 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-indigo-400">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Segurança corporativa e controle granular</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Botão de Ação Direto da Gestão -->
+        <div class="mt-10 text-center">
+          <a href="next-facilities-gestao-v1.0.0.apk" download="next-facilities-gestao-v1.0.0.apk" class="inline-flex items-center gap-2.5 bg-slate-800 hover:bg-slate-700 text-sky-300 border border-sky-500/40 font-extrabold text-sm sm:text-base py-3.5 px-7 rounded-2xl shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all">
+            <i class="bi bi-download text-lg"></i>
+            <span>Baixar APK de Gestão & Coordenação (101.8 MB)</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO PRINCIPAL DE RECURSOS OPERACIONAIS -->
     <section id="recursos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
       
       <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-2.5">
@@ -636,15 +824,12 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         
-        <!-- Recurso 1: Postos & Geofencing (A Maior Vantagem) -->
+        <!-- Recurso 1: Postos & Geofencing -->
         <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-5 sm:p-7 flex flex-col justify-between border-emerald-500/30">
           <div>
             <div class="flex items-center justify-between mb-4 sm:mb-5">
               <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shadow-md">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
-                </svg>
+                <i class="bi bi-geo-alt-fill text-xl"></i>
               </div>
               <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 uppercase tracking-wide border border-emerald-500/30">Maior Vantagem</span>
             </div>
@@ -654,19 +839,17 @@
             </p>
           </div>
           <div class="mt-5 pt-3.5 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-emerald-400">
-            <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <i class="bi bi-check-circle-fill"></i>
             <span>Validação de presença dentro do raio do posto</span>
           </div>
         </div>
 
-        <!-- Recurso 2: Tarefas Recorrentes e Extras (Segunda Vantagem) -->
+        <!-- Recurso 2: Tarefas Recorrentes e Extras -->
         <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-5 sm:p-7 flex flex-col justify-between border-orange-500/30">
           <div>
             <div class="flex items-center justify-between mb-4 sm:mb-5">
               <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400 shadow-md">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
-                </svg>
+                <i class="bi bi-arrow-repeat text-xl"></i>
               </div>
               <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-orange-500/20 text-orange-300 uppercase tracking-wide border border-orange-500/30">Destaque Operacional</span>
             </div>
@@ -676,7 +859,7 @@
             </p>
           </div>
           <div class="mt-5 pt-3.5 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-amber-400">
-            <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <i class="bi bi-check-circle-fill"></i>
             <span>Recriação automática na entrada + extras</span>
           </div>
         </div>
@@ -686,9 +869,7 @@
           <div>
             <div class="flex items-center justify-between mb-4 sm:mb-5">
               <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-sky-500/20 border border-sky-500/30 flex items-center justify-center text-sky-400 shadow-md">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/>
-                </svg>
+                <i class="bi bi-qr-code-scan text-xl"></i>
               </div>
               <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 uppercase tracking-wide">Rondas Auditadas</span>
             </div>
@@ -698,7 +879,7 @@
             </p>
           </div>
           <div class="mt-5 pt-3.5 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-sky-400">
-            <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <i class="bi bi-check-circle-fill"></i>
             <span>Verificação física no local com QR Code</span>
           </div>
         </div>
@@ -708,10 +889,7 @@
           <div>
             <div class="flex items-center justify-between mb-4 sm:mb-5">
               <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 shadow-md">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/>
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"/>
-                </svg>
+                <i class="bi bi-camera-fill text-xl"></i>
               </div>
               <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-orange-500/20 text-orange-300 uppercase tracking-wide">Até 3 Fotos</span>
             </div>
@@ -721,7 +899,7 @@
             </p>
           </div>
           <div class="mt-5 pt-3.5 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-orange-400">
-            <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <i class="bi bi-check-circle-fill"></i>
             <span>Fotos vinculadas ao posto na nuvem</span>
           </div>
         </div>
@@ -731,9 +909,7 @@
           <div>
             <div class="flex items-center justify-between mb-4 sm:mb-5">
               <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl brand-gradient-bg flex items-center justify-center text-white shadow-md shadow-orange-500/25">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/>
-                </svg>
+                <i class="bi bi-stars text-xl"></i>
               </div>
               <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-800 text-orange-300 uppercase tracking-wide">Voz & Texto</span>
             </div>
@@ -743,7 +919,7 @@
             </p>
           </div>
           <div class="mt-5 pt-3.5 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-orange-400">
-            <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <i class="bi bi-check-circle-fill"></i>
             <span>Transcrição de áudio e respostas imediatas</span>
           </div>
         </div>
@@ -753,9 +929,7 @@
           <div>
             <div class="flex items-center justify-between mb-4 sm:mb-5">
               <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 shadow-md">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/>
-                </svg>
+                <i class="bi bi-people-fill text-xl"></i>
               </div>
               <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 uppercase tracking-wide">Supervisão</span>
             </div>
@@ -765,7 +939,7 @@
             </p>
           </div>
           <div class="mt-5 pt-3.5 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-purple-400">
-            <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <i class="bi bi-check-circle-fill"></i>
             <span>Resumo diário e alertas imediatos da equipe</span>
           </div>
         </div>
@@ -784,7 +958,8 @@
           
           <div class="lg:col-span-7 space-y-4 sm:space-y-5 text-left">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/20 text-orange-400 text-xs font-extrabold uppercase tracking-wider border border-orange-500/30">
-              <span>📸</span> Comprovação Inquestionável
+              <i class="bi bi-camera-fill"></i>
+              <span>Comprovação Inquestionável</span>
             </div>
 
             <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
@@ -820,15 +995,15 @@
           <div class="lg:col-span-5 flex justify-center">
             <div class="w-full max-w-sm p-5 sm:p-6 rounded-3xl bg-slate-950/95 border border-orange-500/30 text-left shadow-xl space-y-3.5 sm:space-y-4">
               <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                <span class="text-xs font-bold text-slate-300 uppercase tracking-wider">Evidência Operacional</span>
+                <span class="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+                  <i class="bi bi-camera text-orange-400"></i> Evidência Operacional
+                </span>
                 <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">Validada no Posto</span>
               </div>
 
               <div class="relative rounded-2xl overflow-hidden aspect-video bg-gradient-to-tr from-slate-900 to-slate-800 border border-white/10 flex items-center justify-center text-slate-400">
                 <div class="text-center p-4">
-                  <svg class="w-10 h-10 text-orange-400 mx-auto mb-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
-                  </svg>
+                  <i class="bi bi-image text-3xl text-orange-400 mx-auto mb-2 block"></i>
                   <span class="text-xs font-semibold text-slate-300">Foto de Evidência Registrada</span>
                 </div>
               </div>
@@ -870,9 +1045,9 @@
           </p>
         </div>
 
-        <!-- Box de Alerta do Pré-cadastro -->
+        <!-- Box de Alerta do Pré-cadastro com Ícone Bootstrap -->
         <div class="mb-8 p-4 rounded-2xl bg-amber-500/10 border border-amber-500/25 max-w-3xl mx-auto flex items-start gap-3 text-left">
-          <span class="text-amber-400 text-lg flex-shrink-0 mt-0.5">ℹ️</span>
+          <i class="bi bi-info-circle-fill text-amber-400 text-xl flex-shrink-0 mt-0.5"></i>
           <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
             <strong class="text-amber-300">Atenção Colaborador:</strong> Seu pré-cadastro já foi realizado pela sua coordenação/supervisão. No primeiro acesso, você só precisa validar seu <strong>CPF</strong> e criar sua senha de uso diário.
           </p>
@@ -891,8 +1066,8 @@
                 Abra o aplicativo Next Facilities instalado no seu celular. Na tela de entrada, localize a opção de primeiro acesso no rodapé.
               </p>
             </div>
-            <div class="mt-4 pt-3 border-t border-white/5 text-xs text-slate-500 font-medium">
-              Tela Inicial de Entrada
+            <div class="mt-4 pt-3 border-t border-white/5 text-xs text-slate-500 font-medium flex items-center gap-1.5">
+              <i class="bi bi-phone"></i> Tela Inicial de Entrada
             </div>
           </div>
 
@@ -908,8 +1083,8 @@
                 <strong class="text-orange-400 font-bold">"É seu primeiro acesso? Clique aqui para entrar."</strong>
               </p>
             </div>
-            <div class="mt-4 pt-3 border-t border-white/5 text-xs text-orange-400 font-semibold">
-              Toque no link destacado
+            <div class="mt-4 pt-3 border-t border-white/5 text-xs text-orange-400 font-semibold flex items-center gap-1.5">
+              <i class="bi bi-hand-index-thumb"></i> Toque no link destacado
             </div>
           </div>
 
@@ -924,8 +1099,8 @@
                 Digite o número do seu <strong>CPF</strong> para validar o pré-cadastro efetuado pela sua coordenação e toque em <strong>Continuar</strong>.
               </p>
             </div>
-            <div class="mt-4 pt-3 border-t border-white/5 text-xs text-slate-400 font-medium">
-              Verificação do cadastro
+            <div class="mt-4 pt-3 border-t border-white/5 text-xs text-slate-400 font-medium flex items-center gap-1.5">
+              <i class="bi bi-person-vcard"></i> Verificação cadastral
             </div>
           </div>
 
@@ -940,8 +1115,8 @@
                 Preencha o <strong>e-mail da conta</strong> e cadastre a sua <strong>senha de acesso</strong>. Sua conta é ativada no mesmo instante!
               </p>
             </div>
-            <div class="mt-4 pt-3 border-t border-white/5 text-xs text-emerald-400 font-bold">
-              Conta ativada com sucesso!
+            <div class="mt-4 pt-3 border-t border-white/5 text-xs text-emerald-400 font-bold flex items-center gap-1.5">
+              <i class="bi bi-check-circle-fill"></i> Conta ativada com sucesso!
             </div>
           </div>
 
@@ -974,7 +1149,7 @@
           </div>
           <h4 class="text-base sm:text-lg font-bold text-white mb-1.5">Baixe o Arquivo</h4>
           <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-            Toque no botão laranja de download. O arquivo <span class="text-slate-200 font-mono text-[11px] bg-slate-900 px-1 py-0.5 rounded">next-facilities-operacional-v1.0.0.apk</span> será baixado no celular.
+            Toque no botão de download da versão desejada (Operacional ou Gestão). O arquivo APK será transferido para o seu celular.
           </p>
         </div>
 
@@ -1016,14 +1191,12 @@
       <!-- Selo de Confiança e Segurança -->
       <div class="mt-8 sm:mt-12 p-5 sm:p-6 rounded-2xl sm:rounded-3xl bg-slate-900/60 border border-emerald-500/20 max-w-4xl mx-auto flex flex-col sm:flex-row items-center gap-4 sm:gap-5">
         <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 flex-shrink-0">
-          <svg class="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
-          </svg>
+          <i class="bi bi-patch-check-fill text-2xl sm:text-3xl"></i>
         </div>
         <div class="text-center sm:text-left space-y-1">
-          <h5 class="text-sm sm:text-base font-bold text-white">Aplicativo Corporativo Oficial & Assinado</h5>
+          <h5 class="text-sm sm:text-base font-bold text-white">Aplicativos Corporativos Oficiais & Assinados</h5>
           <p class="text-xs text-slate-400 leading-relaxed">
-            O aviso do Google Chrome ao baixar arquivos APK é uma proteção padrão do Android. Este instalador pertence ao domínio oficial <strong class="text-slate-300">nextfacilities.inovagui.com.br</strong> e possui assinatura digital válida.
+            O aviso padrão do navegador ao baixar arquivos APK é um procedimento de rotina do Android. Estes instaladores pertencem ao domínio corporativo <strong class="text-slate-300">nextfacilities.inovagui.com.br</strong> e possuem assinatura digital válida.
           </p>
         </div>
       </div>
@@ -1049,11 +1222,11 @@
             <div class="space-y-4">
               
               <div class="flex items-start gap-3.5 p-4 rounded-2xl glass-card">
-                <div class="w-8 h-8 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold flex-shrink-0 mt-0.5">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                <div class="w-9 h-9 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold flex-shrink-0 mt-0.5">
+                  <i class="bi bi-geo-alt-fill text-lg"></i>
                 </div>
                 <div>
-                  <h4 class="text-sm font-bold text-white">Localização do Aparelho (Obrigatório)</h4>
+                  <h4 class="text-sm font-bold text-white">Localização GPS de Alta Precisão (Obrigatório)</h4>
                   <p class="text-xs text-slate-400 mt-0.5">
                     Permite comprovar que você está dentro do raio do local de trabalho ao bater ponto ou visitar postos de ronda.
                   </p>
@@ -1061,20 +1234,20 @@
               </div>
 
               <div class="flex items-start gap-3.5 p-4 rounded-2xl glass-card border-orange-500/30">
-                <div class="w-8 h-8 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold flex-shrink-0 mt-0.5">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"/></svg>
+                <div class="w-9 h-9 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold flex-shrink-0 mt-0.5">
+                  <i class="bi bi-camera-fill text-lg"></i>
                 </div>
                 <div>
                   <h4 class="text-sm font-bold text-white">Câmera para Evidências Fotográficas</h4>
                   <p class="text-xs text-slate-400 mt-0.5">
-                    Utilizada para capturar as fotos de comprovação de conclusão de tarefas e vistorias.
+                    Utilizada para capturar as fotos de comprovação de conclusão de tarefas e leitura de QR Codes nas rondas.
                   </p>
                 </div>
               </div>
 
               <div class="flex items-start gap-3.5 p-4 rounded-2xl glass-card">
-                <div class="w-8 h-8 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold flex-shrink-0 mt-0.5">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/></svg>
+                <div class="w-9 h-9 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold flex-shrink-0 mt-0.5">
+                  <i class="bi bi-mic-fill text-lg"></i>
                 </div>
                 <div>
                   <h4 class="text-sm font-bold text-white">Microfone / Áudio</h4>
@@ -1087,62 +1260,52 @@
             </div>
           </div>
 
-          <!-- Especificações Técnicas -->
-          <div class="p-8 rounded-3xl glass-card border-white/10 relative overflow-hidden">
+          <!-- Especificações Técnicas dos 2 Aplicativos -->
+          <div class="p-6 sm:p-8 rounded-3xl glass-card border-white/10 relative overflow-hidden">
             <div class="absolute -top-12 -right-12 w-48 h-48 bg-orange-500/10 rounded-full blur-2xl"></div>
             
-            <h3 class="text-2xl font-extrabold text-white mb-6 flex items-center gap-2">
-              <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/>
-              </svg>
-              Detalhes do Pacote e Versão
+            <h3 class="text-xl sm:text-2xl font-extrabold text-white mb-6 flex items-center gap-2.5">
+              <i class="bi bi-info-square-fill text-orange-400"></i>
+              Ficha Técnica dos Pacotes
             </h3>
 
-            <dl class="space-y-4 text-sm divide-y divide-white/5">
-              <div class="pt-3 flex justify-between">
-                <dt class="text-slate-400">Identificador do Pacote</dt>
-                <dd class="font-mono text-xs text-orange-300 font-semibold">com.inovagui.nextfacilities</dd>
+            <dl class="space-y-4 text-xs sm:text-sm divide-y divide-white/5">
+              <div class="pt-3 flex justify-between items-center">
+                <dt class="text-slate-400">Pacote Operacional</dt>
+                <dd class="font-mono text-xs text-orange-300 font-semibold">next-facilities-operacional-v1.0.0.apk (97.5 MB)</dd>
               </div>
-              <div class="pt-3 flex justify-between">
+              <div class="pt-3 flex justify-between items-center">
+                <dt class="text-slate-400">Pacote Gestão / Admin</dt>
+                <dd class="font-mono text-xs text-sky-300 font-semibold">next-facilities-gestao-v1.0.0.apk (101.8 MB)</dd>
+              </div>
+              <div class="pt-3 flex justify-between items-center">
                 <dt class="text-slate-400">Versão Atual</dt>
-                <dd class="text-emerald-400 font-bold font-mono">1.0.0 (Build 1)</dd>
+                <dd class="text-emerald-400 font-bold font-mono">1.0.0 (Build Oficial)</dd>
               </div>
-              <div class="pt-3 flex justify-between">
+              <div class="pt-3 flex justify-between items-center">
                 <dt class="text-slate-400">Domínio Oficial</dt>
                 <dd class="font-mono text-xs text-white">nextfacilities.inovagui.com.br</dd>
               </div>
-              <div class="pt-3 flex justify-between">
-                <dt class="text-slate-400">Arquivo Instalador</dt>
-                <dd class="font-mono text-xs text-white">next-facilities-operacional-v1.0.0.apk</dd>
-              </div>
-              <div class="pt-3 flex justify-between">
-                <dt class="text-slate-400">Tamanho do Arquivo</dt>
-                <dd class="text-white font-medium">97.5 MB</dd>
-              </div>
-              <div class="pt-3 flex justify-between">
+              <div class="pt-3 flex justify-between items-center">
                 <dt class="text-slate-400">Sistema Mínimo</dt>
                 <dd class="text-white font-medium">Android 8.0 (API 26) ou superior</dd>
               </div>
-              <div class="pt-3 flex justify-between">
+              <div class="pt-3 flex justify-between items-center">
                 <dt class="text-slate-400">Perfis Atendidos</dt>
-                <dd class="text-slate-200 font-medium">Colaborador, Terceirizado e Supervisor</dd>
+                <dd class="text-slate-200 font-medium">Colaborador, Supervisor, Coordenador, Gestor e Admin</dd>
               </div>
             </dl>
 
             <div class="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-3">
-              <a href="next-facilities-operacional-v1.0.0.apk" download="next-facilities-operacional-v1.0.0.apk" class="flex-1 flex items-center justify-center gap-3 brand-gradient-bg text-white font-bold text-sm py-3.5 rounded-2xl shadow-lg shadow-orange-500/20 hover:scale-[1.01] transition-all">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
-                </svg>
-                <span>Baixar APK v1.0.0</span>
+              <a href="next-facilities-operacional-v1.0.0.apk" download="next-facilities-operacional-v1.0.0.apk" class="flex-1 flex items-center justify-center gap-2 brand-gradient-bg text-white font-bold text-xs uppercase py-3.5 rounded-2xl shadow-lg shadow-orange-500/20 hover:scale-[1.01] transition-all">
+                <i class="bi bi-download"></i>
+                <span>Baixar Operacional</span>
               </a>
 
-              <button onclick="copyDownloadLink()" class="px-5 py-3.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-200 font-semibold text-sm transition-all flex items-center justify-center gap-2">
-                <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-3.03a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/>
-                </svg>
-                <span>Copiar Link</span>
-              </button>
+              <a href="next-facilities-gestao-v1.0.0.apk" download="next-facilities-gestao-v1.0.0.apk" class="flex-1 flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-sky-300 border border-sky-500/30 font-bold text-xs uppercase py-3.5 rounded-2xl shadow-lg hover:scale-[1.01] transition-all">
+                <i class="bi bi-shield-lock"></i>
+                <span>Baixar Gestão</span>
+              </a>
             </div>
           </div>
 
@@ -1161,7 +1324,7 @@
           Dúvidas Frequentes
         </h2>
         <p class="text-slate-400 text-sm sm:text-base">
-          Informações claras sobre postos, geofencing, primeiro acesso e uso diário.
+          Informações claras sobre postos, geofencing, aplicativos e primeiro acesso.
         </p>
       </div>
 
@@ -1172,7 +1335,7 @@
           <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer list-none">
             <span>O que é o Geofencing nos postos e como ele funciona?</span>
             <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-2">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              <i class="bi bi-chevron-down text-lg"></i>
             </span>
           </summary>
           <div class="text-slate-300 text-xs sm:text-sm mt-3 pt-3 border-t border-white/5 leading-relaxed space-y-2">
@@ -1190,7 +1353,7 @@
           <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer list-none">
             <span>Como funcionam as tarefas recorrentes e extras?</span>
             <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-2">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              <i class="bi bi-chevron-down text-lg"></i>
             </span>
           </summary>
           <p class="text-slate-400 text-xs sm:text-sm mt-3 pt-3 border-t border-white/5 leading-relaxed">
@@ -1198,12 +1361,30 @@
           </p>
         </details>
 
-        <!-- Pergunta 3: Primeiro Acesso -->
+        <!-- Pergunta 3: Qual a diferença entre os 2 Aplicativos -->
+        <details class="glass-card rounded-2xl p-4 sm:p-5 group transition-all duration-200">
+          <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer list-none">
+            <span>Qual a diferença entre o App Operacional e o App de Gestão?</span>
+            <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-2">
+              <i class="bi bi-chevron-down text-lg"></i>
+            </span>
+          </summary>
+          <div class="text-slate-300 text-xs sm:text-sm mt-3 pt-3 border-t border-white/5 leading-relaxed space-y-2">
+            <p>
+              O <strong>App Operacional</strong> é focado na execução em campo: marcação de ponto eletrônico com validação no raio do posto, rotina de tarefas recorrentes, rondas com QR Code e envio de evidências fotográficas.
+            </p>
+            <p>
+              O <strong>App de Gestão</strong> é voltado para a liderança (Coordenadores, Gestores e Administradores): acompanhamento em tempo real das equipes, parametrização dos postos físicos e raios de Geofencing, gestão de contratos, aprovação de tarefas extras e auditoria de evidências.
+            </p>
+          </div>
+        </details>
+
+        <!-- Pergunta 4: Primeiro Acesso -->
         <details class="glass-card rounded-2xl p-4 sm:p-5 group transition-all duration-200">
           <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer list-none">
             <span>Como realizo meu primeiro acesso no aplicativo?</span>
             <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-2">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              <i class="bi bi-chevron-down text-lg"></i>
             </span>
           </summary>
           <div class="text-slate-300 text-xs sm:text-sm mt-3 pt-3 border-t border-white/5 leading-relaxed space-y-2">
@@ -1219,29 +1400,16 @@
           </div>
         </details>
 
-        <!-- Pergunta 4: Evidências Fotográficas -->
+        <!-- Pergunta 5: Evidências Fotográficas -->
         <details class="glass-card rounded-2xl p-4 sm:p-5 group transition-all duration-200">
           <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer list-none">
             <span>Por que é necessário registrar fotos de evidência?</span>
             <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-2">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              <i class="bi bi-chevron-down text-lg"></i>
             </span>
           </summary>
           <p class="text-slate-400 text-xs sm:text-sm mt-3 pt-3 border-t border-white/5 leading-relaxed">
             As evidências fotográficas são a garantia visual de que a tarefa ou ronda foi executada com excelência. Elas protegem o próprio colaborador em auditorias e garantem a entrega de qualidade contratada pelos clientes do Next Facilities.
-          </p>
-        </details>
-
-        <!-- Pergunta 5: Versão Gestão -->
-        <details class="glass-card rounded-2xl p-4 sm:p-5 group transition-all duration-200">
-          <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer list-none">
-            <span>Onde posso baixar a versão de Gestão / Diretoria?</span>
-            <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-2">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-            </span>
-          </summary>
-          <p class="text-slate-400 text-xs sm:text-sm mt-3 pt-3 border-t border-white/5 leading-relaxed">
-            A versão executiva para Gerentes e Gestores de Contratos está em fase final de homologação. O download disponibilizado nesta página é focado na versão operacional para colaboradores em campo, terceirizados e supervisores.
           </p>
         </details>
 
@@ -1258,18 +1426,20 @@
 
         <div class="relative z-10 max-w-2xl mx-auto space-y-5 sm:space-y-6">
           <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight">
-            Pronto para iniciar suas rotinas em campo?
+            Pronto para transformar sua gestão e operação?
           </h2>
           <p class="text-orange-100 text-sm sm:text-lg leading-relaxed">
             Baixe a versão oficial v1.0.0, ative seu acesso e tenha postos com Geofencing, tarefas recorrentes e evidências fotográficas no seu celular.
           </p>
           
-          <div class="pt-2">
-            <a href="next-facilities-operacional-v1.0.0.apk" download="next-facilities-operacional-v1.0.0.apk" class="inline-flex items-center gap-3 bg-slate-950 text-white hover:bg-slate-900 font-extrabold text-sm sm:text-base px-7 sm:px-8 py-3.5 sm:py-4 rounded-2xl shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all">
-              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-orange-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9996.4482.9996.9993.0001.5511-.4486.9997-.9996.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9996.4482.9996.9993 0 .5511-.4485.9997-.9996.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.4128 13.8533 8.0808 12 8.0808c-1.8534 0-3.5902.332-5.1368.8689L4.841 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396"/>
-              </svg>
-              <span>Download do APK v1.0.0 (97.5 MB)</span>
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a href="next-facilities-operacional-v1.0.0.apk" download="next-facilities-operacional-v1.0.0.apk" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-slate-950 text-white hover:bg-slate-900 font-extrabold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all">
+              <i class="bi bi-person-badge-fill text-orange-400 text-lg"></i>
+              <span>Baixar Operacional (97.5 MB)</span>
+            </a>
+            <a href="next-facilities-gestao-v1.0.0.apk" download="next-facilities-gestao-v1.0.0.apk" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-slate-900/90 text-sky-300 hover:bg-slate-900 border border-sky-400/40 font-extrabold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all">
+              <i class="bi bi-shield-lock-fill text-sky-400 text-lg"></i>
+              <span>Baixar Gestão / Admin (101.8 MB)</span>
             </a>
           </div>
         </div>
@@ -1290,10 +1460,11 @@
         </div>
       </div>
 
-      <div class="flex flex-wrap items-center justify-center gap-5 sm:gap-6 text-xs text-slate-400">
+      <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs text-slate-400">
         <a href="#download" class="hover:text-orange-400 transition-colors">Download</a>
         <a href="#postos-geofencing" class="hover:text-orange-400 transition-colors">Postos & Geofencing</a>
         <a href="#recursos" class="hover:text-orange-400 transition-colors">Recursos</a>
+        <a href="#gestao" class="hover:text-orange-400 transition-colors">Gestão & Admin</a>
         <a href="#evidencias" class="hover:text-orange-400 transition-colors">Evidências</a>
         <a href="#primeiro-acesso" class="hover:text-orange-400 transition-colors">Primeiro Acesso</a>
         <a href="#instalacao" class="hover:text-orange-400 transition-colors">Instalação</a>
@@ -1303,69 +1474,125 @@
     </div>
   </footer>
 
-  <!-- BARRA FIXA DE DOWNLOAD NO MOBILE AO ROLAR (Com Safe Area Inset) -->
+  <!-- BARRA FIXA DE DOWNLOAD NO MOBILE AO ROLAR -->
   <div id="stickyBottomBar" class="fixed bottom-0 inset-x-0 p-3 safe-bottom-padding bg-slate-950/95 border-t border-white/10 backdrop-blur-2xl z-40 transform translate-y-full transition-transform duration-300 sm:hidden shadow-2xl">
-    <div class="flex items-center justify-between gap-3 max-w-md mx-auto">
-      <div class="flex items-center gap-2.5">
-        <img src="assets/icons/logo-icon.png" alt="Next Facilities" class="w-8 h-8 object-contain rounded-lg" />
+    <div class="flex items-center justify-between gap-2 max-w-md mx-auto">
+      <div class="flex items-center gap-2">
+        <img src="assets/icons/logo-icon.png" alt="Next Facilities" class="w-7 h-7 object-contain rounded-lg" />
         <div class="text-left">
-          <div class="text-xs font-bold text-white leading-tight">Next Facilities v1.0.0</div>
-          <div class="text-[10px] text-slate-400">Postos com Geofencing • 97.5 MB</div>
+          <div id="stickyTitle" class="text-xs font-bold text-white leading-tight">Next Facilities v1.0.0</div>
+          <div id="stickySubtitle" class="text-[10px] text-slate-400">Operacional • 97.5 MB</div>
         </div>
       </div>
-      <a href="next-facilities-operacional-v1.0.0.apk" download="next-facilities-operacional-v1.0.0.apk" class="brand-gradient-bg text-white font-extrabold text-xs uppercase px-4 py-2.5 rounded-xl shadow-lg shadow-orange-500/25 active:scale-95 flex items-center gap-1.5 flex-shrink-0">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
-        </svg>
-        <span>Baixar APK</span>
+      <a id="stickyDownloadBtn" href="next-facilities-operacional-v1.0.0.apk" download="next-facilities-operacional-v1.0.0.apk" class="brand-gradient-bg text-white font-extrabold text-xs uppercase px-3.5 py-2.5 rounded-xl shadow-lg shadow-orange-500/25 active:scale-95 flex items-center gap-1.5 flex-shrink-0">
+        <i class="bi bi-download text-sm"></i>
+        <span id="stickyBtnText">Baixar APK</span>
       </a>
     </div>
   </div>
 
-  <!-- MODAL: GESTÃO (EM BREVE) -->
-  <div id="gestaoModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="glass-card max-w-md w-full rounded-3xl p-6 sm:p-8 border border-white/10 text-center relative animate-fade-in shadow-2xl">
-      <button onclick="hideGestaoModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
-
-      <div class="w-16 h-16 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mx-auto mb-4">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-        </svg>
-      </div>
-
-      <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">
-        Versão Gerencial em Breve
-      </span>
-
-      <h3 class="text-xl font-bold text-white mt-4 mb-2">Next Facilities Gestão</h3>
-      
-      <p class="text-slate-300 text-sm leading-relaxed mb-6">
-        O aplicativo exclusivo para <strong>Gerentes e Diretoria</strong> com painéis consolidados em tempo real, parametrização de contratos e auditoria macro está em fase final de homologação.
-      </p>
-
-      <div class="p-4 rounded-xl bg-slate-900/80 border border-white/5 text-xs text-slate-400 text-left mb-6 space-y-2">
-        <div class="flex items-center gap-2 text-slate-200">
-          <span class="text-emerald-400 font-bold">✓</span> Painel de indicadores gerenciais
-        </div>
-        <div class="flex items-center gap-2 text-slate-200">
-          <span class="text-emerald-400 font-bold">✓</span> Gestão de múltiplos contratos e faturamento
-        </div>
-        <div class="flex items-center gap-2 text-slate-200">
-          <span class="text-emerald-400 font-bold">✓</span> Acesso exclusivo para supervisores gerais e gerentes
-        </div>
-      </div>
-
-      <button onclick="hideGestaoModal()" class="w-full brand-gradient-bg text-white font-bold text-sm py-3 rounded-xl shadow-lg">
-        Entendido, continuar no Colaborador/Supervisor
-      </button>
-    </div>
-  </div>
-
-  <!-- SCRIPT JAVASCRIPT -->
+  <!-- SCRIPT JAVASCRIPT DINÂMICO E ERGONÔMICO -->
   <script>
-    const OFFICIAL_DOWNLOAD_URL = 'https://nextfacilities.inovagui.com.br/next-facilities-operacional-v1.0.0.apk';
+    const APPS_DATA = {
+      operacional: {
+        id: 'operacional',
+        name: 'Operacional',
+        title: 'Baixe o App Operacional do <br class="hidden sm:inline" /><span class="brand-gradient-text">Next Facilities</span>',
+        description: 'A maior vantagem em campo: <strong>postos com Geofencing</strong> (raio de segurança autorizado), execução de <strong>tarefas recorrentes e extras</strong>, rondas com QR Code e comprovação por <strong>evidências fotográficas</strong>.',
+        apkFile: 'next-facilities-operacional-v1.0.0.apk',
+        downloadUrl: 'https://nextfacilities.inovagui.com.br/next-facilities-operacional-v1.0.0.apk',
+        sizeMB: '97.5 MB',
+        packageId: 'com.inovagui.nextfacilities',
+        btnSubtext: 'Download Oficial • Versão Operacional',
+        btnMaintext: 'Baixar APK Operacional (97.5 MB)',
+        qrLabel: 'Baixar Operacional no Celular'
+      },
+      gestao: {
+        id: 'gestao',
+        name: 'Gestão & Coordenação',
+        title: 'Baixe o App de Gestão do <br class="hidden sm:inline" /><span class="brand-gradient-text">Next Facilities</span>',
+        description: 'Desenvolvido para <strong>Coordenadores, Gestores e Administradores</strong>: parametrização de <strong>postos e raios de Geofencing</strong>, dashboards em tempo real, gestão de contratos, aprovação de tarefas extras e auditoria de evidências.',
+        apkFile: 'next-facilities-gestao-v1.0.0.apk',
+        downloadUrl: 'https://nextfacilities.inovagui.com.br/next-facilities-gestao-v1.0.0.apk',
+        sizeMB: '101.8 MB',
+        packageId: 'com.inovagui.nextfacilities.gestao',
+        btnSubtext: 'Download Oficial • Versão Gestão & Admin',
+        btnMaintext: 'Baixar APK Gestão (101.8 MB)',
+        qrLabel: 'Baixar Gestão no Celular'
+      }
+    };
+
+    let currentAppKey = 'operacional';
+
+    // Alternador de Abas de Aplicativo
+    function switchAppTab(appKey) {
+      currentAppKey = appKey;
+      const app = APPS_DATA[appKey];
+      if (!app) return;
+
+      const tabOp = document.getElementById('tabOperacionalBtn');
+      const tabGe = document.getElementById('tabGestaoBtn');
+      const heroTitle = document.getElementById('heroTitle');
+      const heroDesc = document.getElementById('heroDescription');
+      const heroBtn = document.getElementById('heroDownloadBtn');
+      const btnSubtext = document.getElementById('btnSubtext');
+      const btnMaintext = document.getElementById('btnMaintext');
+      const packageBadge = document.getElementById('packageBadge');
+      const qrCodeImg = document.getElementById('qrCodeImg');
+      const qrCodeLabel = document.getElementById('qrCodeLabel');
+      const stickyBtn = document.getElementById('stickyDownloadBtn');
+      const stickySub = document.getElementById('stickySubtitle');
+
+      if (appKey === 'operacional') {
+        tabOp.className = 'flex-1 flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-bold brand-gradient-bg text-white shadow-md transition-all';
+        tabGe.className = 'flex-1 flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-200 transition-all';
+      } else {
+        tabGe.className = 'flex-1 flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-bold bg-slate-800 text-sky-300 border border-sky-500/40 shadow-md transition-all';
+        tabOp.className = 'flex-1 flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-200 transition-all';
+      }
+
+      if (heroTitle) heroTitle.innerHTML = app.title;
+      if (heroDesc) heroDesc.innerHTML = app.description;
+      if (heroBtn) {
+        heroBtn.href = app.apkFile;
+        heroBtn.setAttribute('download', app.apkFile);
+      }
+      if (btnSubtext) btnSubtext.innerText = app.btnSubtext;
+      if (btnMaintext) btnMaintext.innerText = app.btnMaintext;
+      if (packageBadge) packageBadge.innerText = app.packageId;
+      if (qrCodeLabel) qrCodeLabel.innerText = app.qrLabel;
+
+      if (qrCodeImg) {
+        qrCodeImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(app.downloadUrl)}`;
+      }
+
+      if (stickyBtn) {
+        stickyBtn.href = app.apkFile;
+        stickyBtn.setAttribute('download', app.apkFile);
+      }
+      if (stickySub) {
+        stickySub.innerText = `${app.name} • ${app.sizeMB}`;
+      }
+    }
+
+    // Copiar Link Atual
+    function copyCurrentDownloadLink() {
+      const app = APPS_DATA[currentAppKey];
+      const targetUrl = app ? app.downloadUrl : 'https://nextfacilities.inovagui.com.br/next-facilities-operacional-v1.0.0.apk';
+
+      navigator.clipboard.writeText(targetUrl).then(() => {
+        const textElem = document.getElementById('copyLinkText');
+        if (textElem) {
+          const original = textElem.innerText;
+          textElem.innerText = 'Link Copiado!';
+          setTimeout(() => {
+            textElem.innerText = original;
+          }, 2500);
+        }
+      }).catch(() => {
+        prompt('Copie o link abaixo:', targetUrl);
+      });
+    }
 
     // Menu Mobile
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -1379,40 +1606,7 @@
       });
     }
 
-    // Modal de Gestão
-    function showGestaoModal() {
-      const modal = document.getElementById('gestaoModal');
-      if (modal) {
-        modal.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-      }
-    }
-
-    function hideGestaoModal() {
-      const modal = document.getElementById('gestaoModal');
-      if (modal) {
-        modal.classList.add('hidden');
-        document.body.style.overflow = 'auto';
-      }
-    }
-
-    // Copiar Link Oficial para a Área de Transferência
-    function copyDownloadLink() {
-      navigator.clipboard.writeText(OFFICIAL_DOWNLOAD_URL).then(() => {
-        const textElem = document.getElementById('copyLinkText');
-        if (textElem) {
-          const original = textElem.innerText;
-          textElem.innerText = 'Link Copiado!';
-          setTimeout(() => {
-            textElem.innerText = original;
-          }, 2500);
-        }
-      }).catch(() => {
-        prompt('Copie o link abaixo:', OFFICIAL_DOWNLOAD_URL);
-      });
-    }
-
-    // Barra de Download Fixa no Mobile
+    // Barra de Download Fixa no Mobile ao Rolar
     const stickyBottomBar = document.getElementById('stickyBottomBar');
     window.addEventListener('scroll', () => {
       if (window.innerWidth < 640 && stickyBottomBar) {
@@ -1424,12 +1618,9 @@
       }
     });
 
-    // QR Code garantido apontando para a URL de Produção
+    // Iniciar com Operacional
     window.addEventListener('DOMContentLoaded', () => {
-      const qrImg = document.getElementById('qrCodeImg');
-      if (qrImg) {
-        qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(OFFICIAL_DOWNLOAD_URL)}`;
-      }
+      switchAppTab('operacional');
     });
   </script>
 </body>

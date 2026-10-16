@@ -1,0 +1,7 @@
+# Arquivo com tamanho superior ao limite de 100MB do GitHub (hospedado diretamente na VPS)
+next-facilities-gestao-v1.0.0.apk
+
+# Arquivos de sistema e ambiente
+.DS_Store
+Thumbs.db
+*.log

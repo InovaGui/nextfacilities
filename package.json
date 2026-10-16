@@ -1,28 +1,46 @@
 {
   "name": "nextfacilities-landing-page",
   "version": "1.0.0",
-  "description": "Portal oficial de download e apresentação do aplicativo móvel Next Facilities para Android",
+  "description": "Portal oficial de download e apresentação dos aplicativos móveis Next Facilities para Android (Operacional e Gestão)",
   "homepage": "https://nextfacilities.inovagui.com.br/",
   "main": "index.html",
   "repository": {
     "type": "git",
     "url": "https://github.com/InovaGui/nextfacilities.git"
   },
-  "app": {
-    "id": "com.inovagui.nextfacilities",
-    "displayName": "Next Facilities Operacional",
-    "version": "1.0.0",
-    "buildNumber": 1,
-    "minAndroidVersion": "8.0 (API 26)",
-    "apkFile": "next-facilities-operacional-v1.0.0.apk",
-    "downloadUrl": "https://nextfacilities.inovagui.com.br/next-facilities-operacional-v1.0.0.apk",
-    "fileSizeBytes": 102216302,
-    "fileSizeMB": 97.48,
-    "targetProfiles": [
-      "Colaborador",
-      "Quarteirizado / Terceirizado",
-      "Supervisor"
-    ]
+  "apps": {
+    "operacional": {
+      "id": "com.inovagui.nextfacilities",
+      "displayName": "Next Facilities Operacional",
+      "version": "1.0.0",
+      "buildNumber": 1,
+      "minAndroidVersion": "8.0 (API 26)",
+      "apkFile": "next-facilities-operacional-v1.0.0.apk",
+      "downloadUrl": "https://nextfacilities.inovagui.com.br/next-facilities-operacional-v1.0.0.apk",
+      "fileSizeBytes": 102216302,
+      "fileSizeMB": 97.48,
+      "targetProfiles": [
+        "Colaborador",
+        "Quarteirizado / Terceirizado",
+        "Supervisor de Campo"
+      ]
+    },
+    "gestao": {
+      "id": "com.inovagui.nextfacilities.gestao",
+      "displayName": "Next Facilities Gestão & Coordenação",
+      "version": "1.0.0",
+      "buildNumber": 1,
+      "minAndroidVersion": "8.0 (API 26)",
+      "apkFile": "next-facilities-gestao-v1.0.0.apk",
+      "downloadUrl": "https://nextfacilities.inovagui.com.br/next-facilities-gestao-v1.0.0.apk",
+      "fileSizeBytes": 106796870,
+      "fileSizeMB": 101.85,
+      "targetProfiles": [
+        "Coordenador",
+        "Gestor de Contratos",
+        "Administrador Geral"
+      ]
+    }
   },
   "assets": {
     "icons": "assets/icons/",
@@ -36,6 +54,8 @@
     "nextfacilities",
     "inovagui",
     "facilities",
+    "gestao",
+    "coordenacao",
     "geofencing",
     "postos",
     "postos-de-trabalho",
