@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Download App Android | Next Facilities - Colaborador-Supervisor & Gestor</title>
-  <meta name="description" content="Baixe os aplicativos oficiais Next Facilities para Android: Colaborador-Supervisor e Gestor. Postos com Geofencing, tarefas recorrentes e extras, rondas e gestão operacional." />
+  <title>Next Facilities | Download Oficial Android - Colaborador-Supervisor & Gestor</title>
+  <meta name="description" content="Portal oficial de download dos aplicativos Next Facilities para Android. Postos com Geofencing, tarefas recorrentes e extras, rondas por QR Code e gestão em tempo real." />
   <link rel="canonical" href="https://nextfacilities.inovagui.com.br/" />
   
   <!-- Favicon -->
@@ -12,8 +12,8 @@
   <link rel="apple-touch-icon" href="assets/icons/logo-icon.png" />
   
   <!-- Open Graph / Redes Sociais -->
-  <meta property="og:title" content="Download App Next Facilities - Colaborador-Supervisor & Gestor" />
-  <meta property="og:description" content="Operações em campo e gestão integrada: postos com Geofencing, tarefas recorrentes e extras, rondas com QR Code e evidências fotográficas." />
+  <meta property="og:title" content="Next Facilities | Download Oficial Android" />
+  <meta property="og:description" content="Operações em campo e gestão integrada: postos com Geofencing, tarefas recorrentes e extras, rondas e comprovação por evidências." />
   <meta property="og:image" content="https://nextfacilities.inovagui.com.br/assets/images/logo-vertical.png" />
   <meta property="og:url" content="https://nextfacilities.inovagui.com.br/" />
   <meta property="og:type" content="website" />
@@ -50,10 +50,10 @@
               900: '#7c2d12',
             },
             dark: {
-              bg: '#0B0F17',
-              card: '#121824',
-              cardBorder: '#1F2937',
-              hover: '#1B2434',
+              bg: '#080C14',
+              card: '#0F1624',
+              cardBorder: 'rgba(255, 255, 255, 0.08)',
+              hover: '#151F32',
             }
           }
         }
@@ -73,7 +73,7 @@
       width: 6px;
     }
     ::-webkit-scrollbar-track {
-      background: #0b0f17;
+      background: #080c14;
     }
     ::-webkit-scrollbar-thumb {
       background: #1f2937;
@@ -83,44 +83,114 @@
       background: #ea580c;
     }
 
+    /* Tipografia e Gradientes Oficiais */
     .brand-gradient-text {
-      background: linear-gradient(135deg, #FF4500 0%, #FFA500 100%);
+      background: linear-gradient(135deg, #FF5500 0%, #FF9900 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
     .brand-gradient-bg {
-      background: linear-gradient(135deg, #FF4500 0%, #FFA500 100%);
+      background: linear-gradient(135deg, #FF4500 0%, #FF8C00 100%);
     }
 
-    .glass-card {
-      background: rgba(18, 24, 36, 0.92);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+    .brand-gradient-border {
+      background: linear-gradient(135deg, rgba(255, 69, 0, 0.5) 0%, rgba(255, 140, 0, 0.2) 100%);
+    }
+
+    /* Padrão de Grade Tecnológica de Fundo */
+    .bg-grid-tech {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+      mask-image: radial-gradient(ellipse at center, black 35%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 35%, transparent 75%);
+    }
+
+    /* Cards Ultra Profissionais com Efeito Glassmorphism de Alta Definição */
+    .glass-card-pro {
+      background: rgba(15, 22, 36, 0.75);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card-pro:hover {
+      transform: translateY(-4px);
+      border-color: rgba(249, 115, 22, 0.45);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 25px -5px rgba(249, 115, 22, 0.25);
     }
 
-    .glass-card-hover {
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    /* Animações Orgânicas dos Feixes de Luz */
+    @keyframes floatBlob1 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(35px, -25px) scale(1.12); }
     }
-    .glass-card-hover:hover {
-      transform: translateY(-3px);
-      border-color: rgba(255, 120, 0, 0.4);
-      box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.5), 0 0 20px -4px rgba(255, 87, 34, 0.2);
+    @keyframes floatBlob2 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(-30px, 30px) scale(1.08); }
+    }
+    .animate-blob-1 {
+      animation: floatBlob1 9s ease-in-out infinite;
+    }
+    .animate-blob-2 {
+      animation: floatBlob2 11s ease-in-out infinite;
     }
 
-    .badge-highlight {
-      background: linear-gradient(90deg, rgba(234, 116, 38, 0.15) 0%, rgba(251, 212, 61, 0.15) 100%);
-      border: 1px solid rgba(244, 153, 45, 0.35);
-    }
-
+    /* Animação do Scanner e Radar de Geofencing */
     @keyframes radarPing {
-      0% { transform: scale(0.85); opacity: 0.8; }
+      0% { transform: scale(0.8); opacity: 0.8; }
       50% { transform: scale(1.4); opacity: 0.25; }
-      100% { transform: scale(1.9); opacity: 0; }
+      100% { transform: scale(2.0); opacity: 0; }
     }
-    .radar-pulse {
-      animation: radarPing 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    .radar-pulse-pro {
+      animation: radarPing 2.6s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+
+    @keyframes radarSweep {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .radar-sweep-pro {
+      background: conic-gradient(from 0deg at 50% 50%, rgba(249, 115, 22, 0) 0deg, rgba(249, 115, 22, 0) 280deg, rgba(249, 115, 22, 0.35) 360deg);
+      animation: radarSweep 3.2s linear infinite;
+    }
+
+    /* Efeito de Feixe de Luz Deslizante no Botão (Shimmer) */
+    @keyframes lightSweep {
+      0% { transform: translateX(-160%) skewX(-20deg); }
+      30%, 100% { transform: translateX(260%) skewX(-20deg); }
+    }
+    .btn-shimmer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+      animation: lightSweep 4.5s ease-in-out infinite;
+      pointer-events-none;
+    }
+
+    /* Animação Suave de Revelação por Scroll (Intersection Observer) */
+    .reveal-item {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal-item.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Transição Suave na Troca de Conteúdo */
+    .app-switch-anim {
+      transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+    }
+    .app-switch-anim.fading {
+      opacity: 0;
+      transform: translateY(6px);
     }
 
     .safe-bottom-padding {
@@ -128,47 +198,54 @@
     }
   </style>
 </head>
-<body class="bg-[#0B0F17] text-slate-100 font-sans antialiased selection:bg-orange-500 selection:text-white relative overflow-x-hidden">
+<body class="bg-[#080C14] text-slate-100 font-sans antialiased selection:bg-orange-500 selection:text-white relative overflow-x-hidden">
 
-  <!-- Efeitos de Luz no Fundo (Tons Quentes Laranja / Âmbar da Marca) -->
+  <!-- Efeitos de Fundo Dinâmicos (Grade Tecnológica + Luzes Vivas da Marca) -->
   <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-gradient-to-br from-orange-600/20 via-amber-500/10 to-transparent rounded-full blur-[120px]"></div>
-    <div class="absolute top-[40%] -left-48 w-[500px] h-[500px] bg-orange-600/10 rounded-full blur-[130px]"></div>
-    <div class="absolute top-[70%] -right-48 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-[130px]"></div>
+    <div class="absolute inset-0 bg-grid-tech"></div>
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-gradient-to-br from-orange-600/20 via-amber-500/15 to-transparent rounded-full blur-[140px] animate-blob-1"></div>
+    <div class="absolute top-[35%] -left-48 w-[550px] h-[550px] bg-orange-600/12 rounded-full blur-[140px] animate-blob-2"></div>
+    <div class="absolute top-[65%] -right-48 w-[550px] h-[550px] bg-amber-500/12 rounded-full blur-[140px] animate-blob-1"></div>
   </div>
 
-  <!-- CABEÇALHO DINÂMICO QUE SE ADAPTA AO APLICATIVO SELECIONADO -->
-  <header class="sticky top-0 z-50 glass-card border-b border-white/5 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
+  <!-- CABEÇALHO ULTRA PROFISSIONAL E DINÂMICO -->
+  <header class="sticky top-0 z-50 glass-card-pro border-b border-white/[0.07] transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-4">
       
-      <!-- Logotipo da Marca com Subtítulo Dinâmico -->
-      <a href="#" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-orange-500 rounded-xl p-1 flex-shrink-0">
-        <img src="assets/icons/logo-icon.png" alt="Ícone Next Facilities" class="w-10 h-10 sm:w-12 sm:h-12 object-contain drop-shadow-md group-hover:scale-105 transition-transform" />
+      <!-- Logotipo com Destaque e Tag Dinâmica do App Selecionado -->
+      <a href="#" class="flex items-center gap-3 sm:gap-3.5 group focus:outline-none focus:ring-2 focus:ring-orange-500 rounded-xl p-1 flex-shrink-0">
+        <div class="relative">
+          <img src="assets/icons/logo-icon.png" alt="Ícone Next Facilities" class="w-10 h-10 sm:w-12 sm:h-12 object-contain drop-shadow-xl group-hover:scale-105 transition-transform" />
+          <span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-400 rounded-full border-2 border-[#0F1624] ring-2 ring-emerald-400/30 animate-pulse"></span>
+        </div>
         <div class="flex flex-col">
-          <span class="text-lg sm:text-xl font-extrabold tracking-tight leading-none text-white">NEXT <span class="brand-gradient-text">FACILITIES</span></span>
-          <span id="headerAppTag" class="text-[10px] sm:text-[11px] font-bold text-orange-400 mt-1 flex items-center gap-1.5">
-            <i class="bi bi-person-badge text-xs"></i>
+          <div class="flex items-center gap-2">
+            <span class="text-lg sm:text-xl font-extrabold tracking-tight leading-none text-white">NEXT <span class="brand-gradient-text">FACILITIES</span></span>
+            <span class="text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-orange-500/15 text-orange-400 border border-orange-500/30 hidden xs:inline">Oficial</span>
+          </div>
+          <span id="headerAppTag" class="text-[10px] sm:text-[11px] font-bold text-orange-300 mt-1 flex items-center gap-1.5 transition-all">
+            <i class="bi bi-person-badge text-xs text-orange-400"></i>
             <span>App Colaborador-Supervisor</span>
           </span>
         </div>
       </a>
 
-      <!-- Seletor Rápido Integrado no Topo (Desktop) -->
-      <div class="hidden lg:inline-flex p-1 rounded-2xl bg-slate-900/90 border border-white/10 shadow-lg backdrop-blur-md">
-        <button id="headerTabColaborador" onclick="selectAppProfile('colaborador-supervisor')" class="flex items-center gap-2 py-1.5 px-3.5 rounded-xl text-xs font-bold brand-gradient-bg text-white shadow transition-all">
+      <!-- Seletor Rápido Integrado no Header (Desktop) -->
+      <div class="hidden xl:inline-flex p-1 rounded-2xl bg-slate-950/80 border border-white/10 shadow-inner backdrop-blur-md">
+        <button id="headerTabColaborador" onclick="selectAppProfile('colaborador-supervisor')" class="flex items-center gap-2 py-1.5 px-4 rounded-xl text-xs font-bold brand-gradient-bg text-white shadow-md transition-all">
           <i class="bi bi-person-badge text-base"></i>
           <span>Colaborador-Supervisor</span>
         </button>
-        <button id="headerTabGestor" onclick="selectAppProfile('gestor')" class="flex items-center gap-2 py-1.5 px-3.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition-all">
+        <button id="headerTabGestor" onclick="selectAppProfile('gestor')" class="flex items-center gap-2 py-1.5 px-4 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-100 transition-all">
           <i class="bi bi-briefcase text-base"></i>
           <span>Gestor</span>
         </button>
       </div>
 
       <!-- Links Mais Importantes da Navegação -->
-      <nav class="hidden md:flex items-center gap-6 lg:gap-7 text-sm font-medium text-slate-300">
-        <a href="#postos-geofencing" class="hover:text-orange-400 transition-colors flex items-center gap-1.5 text-white font-semibold">
-          <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+      <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-semibold text-slate-300">
+        <a href="#postos-geofencing" class="hover:text-orange-400 transition-colors flex items-center gap-2 text-white">
+          <span class="w-2 h-2 rounded-full bg-orange-500 animate-ping"></span>
           Postos & Geofencing
         </a>
         <a href="#recursos" class="hover:text-orange-400 transition-colors">Recursos</a>
@@ -176,9 +253,10 @@
         <a href="#faq" class="hover:text-orange-400 transition-colors">Dúvidas</a>
       </nav>
 
-      <!-- Botão Superior de Download Dinâmico (Sempre Alinhado ao App Ativo) -->
+      <!-- Botão Superior de Download Sincronizado com Efeito Hover Shimmer -->
       <div class="flex items-center gap-3 flex-shrink-0">
-        <a href="next-facilities-colaborador-supervisor-v1.0.0.apk" download="next-facilities-colaborador-supervisor-v1.0.0.apk" id="topNavDownloadBtn" class="hidden sm:inline-flex items-center gap-2.5 brand-gradient-bg text-white font-bold text-xs uppercase tracking-wider px-4 sm:px-5 py-2.5 rounded-full shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all flex-shrink-0">
+        <a href="next-facilities-colaborador-supervisor-v1.0.0.apk" download="next-facilities-colaborador-supervisor-v1.0.0.apk" id="topNavDownloadBtn" class="relative group overflow-hidden hidden sm:inline-flex items-center gap-2.5 brand-gradient-bg text-white font-extrabold text-xs uppercase tracking-wider px-5 py-3 rounded-full shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all flex-shrink-0">
+          <div class="btn-shimmer"></div>
           <i class="bi bi-download text-sm"></i>
           <span id="topNavBtnText">Baixar Colaborador-Supervisor (97.5 MB)</span>
         </a>
@@ -190,43 +268,43 @@
       </div>
     </div>
 
-    <!-- Menu Dropdown Mobile Simplificado com Troca de App -->
-    <div id="mobileMenu" class="hidden md:hidden border-t border-white/10 bg-[#0e1420]/98 px-5 py-4 space-y-3 backdrop-blur-2xl shadow-2xl">
+    <!-- Menu Dropdown Mobile Simplificado e Fluido -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-white/10 bg-[#0c121e]/98 px-5 py-4 space-y-3 backdrop-blur-2xl shadow-2xl">
       
       <!-- Seletor de Perfil no Menu Mobile -->
-      <div class="flex rounded-xl bg-slate-900 border border-white/10 p-1">
-        <button id="mobileTabColaborador" onclick="selectAppProfile('colaborador-supervisor')" class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-bold brand-gradient-bg text-white">
+      <div class="flex rounded-xl bg-slate-950 border border-white/10 p-1">
+        <button id="mobileTabColaborador" onclick="selectAppProfile('colaborador-supervisor')" class="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-bold brand-gradient-bg text-white shadow">
           <i class="bi bi-person-badge text-base"></i>
           <span>Colaborador</span>
         </button>
-        <button id="mobileTabGestor" onclick="selectAppProfile('gestor')" class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-semibold text-slate-400">
+        <button id="mobileTabGestor" onclick="selectAppProfile('gestor')" class="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-semibold text-slate-400">
           <i class="bi bi-briefcase text-base"></i>
           <span>Gestor</span>
         </button>
       </div>
 
-      <a href="#postos-geofencing" class="flex items-center gap-3 p-2.5 rounded-xl text-white font-bold text-sm hover:bg-white/5">
-        <i class="bi bi-geo-alt text-orange-400 text-xl"></i>
+      <a href="#postos-geofencing" class="flex items-center gap-3.5 p-2.5 rounded-xl text-white font-bold text-sm hover:bg-white/5">
+        <i class="bi bi-geo-alt-fill text-orange-400 text-xl"></i>
         <span>Postos & Geofencing</span>
       </a>
 
-      <a href="#recursos" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 text-slate-200 font-medium text-sm">
-        <i class="bi bi-grid text-orange-400 text-xl"></i>
+      <a href="#recursos" class="flex items-center gap-3.5 p-2.5 rounded-xl hover:bg-white/5 text-slate-200 font-medium text-sm">
+        <i class="bi bi-grid-fill text-orange-400 text-xl"></i>
         <span>Recursos do Sistema</span>
       </a>
 
-      <a href="#primeiro-acesso" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 text-slate-200 font-medium text-sm">
+      <a href="#primeiro-acesso" class="flex items-center gap-3.5 p-2.5 rounded-xl hover:bg-white/5 text-slate-200 font-medium text-sm">
         <i class="bi bi-person-vcard text-orange-400 text-xl"></i>
         <span>Primeiro Acesso (CPF)</span>
       </a>
 
-      <a href="#faq" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 text-slate-200 font-medium text-sm">
+      <a href="#faq" class="flex items-center gap-3.5 p-2.5 rounded-xl hover:bg-white/5 text-slate-200 font-medium text-sm">
         <i class="bi bi-question-circle text-orange-400 text-xl"></i>
         <span>Dúvidas Frequentes</span>
       </a>
 
       <div class="pt-2 border-t border-white/10">
-        <a id="mobileMenuDownloadBtn" href="next-facilities-colaborador-supervisor-v1.0.0.apk" download="next-facilities-colaborador-supervisor-v1.0.0.apk" class="w-full flex items-center justify-center gap-2 brand-gradient-bg text-white font-extrabold text-sm py-3.5 rounded-xl shadow-lg active:scale-[0.98] transition-all">
+        <a id="mobileMenuDownloadBtn" href="next-facilities-colaborador-supervisor-v1.0.0.apk" download="next-facilities-colaborador-supervisor-v1.0.0.apk" class="w-full flex items-center justify-center gap-2.5 brand-gradient-bg text-white font-extrabold text-sm py-3.5 rounded-xl shadow-xl active:scale-[0.98] transition-all">
           <i class="bi bi-download text-lg"></i>
           <span id="mobileMenuBtnText">Baixar APK (97.5 MB)</span>
         </a>
@@ -236,20 +314,20 @@
 
   <!-- CONTEÚDO PRINCIPAL (HERO FOCADO NO DOWNLOAD DE ACORDO COM A OPÇÃO) -->
   <main class="relative z-10">
-    <section id="download" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:pt-14 sm:pb-20">
+    <section id="download" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:pt-16 sm:pb-20">
       
       <!-- Seletor de Perfil do Aplicativo: Colaborador-Supervisor (Padrão) vs Gestor -->
-      <div class="flex flex-col items-center justify-center mb-6 sm:mb-8">
-        <div class="inline-flex p-1.5 rounded-2xl bg-slate-900/90 border border-white/10 shadow-xl backdrop-blur-md max-w-sm sm:max-w-md w-full">
+      <div class="flex flex-col items-center justify-center mb-7 sm:mb-9">
+        <div class="inline-flex p-1.5 rounded-2xl bg-slate-950/90 border border-white/10 shadow-2xl backdrop-blur-md max-w-sm sm:max-w-md w-full">
           
           <!-- Botão Colaborador-Supervisor (Ativo por padrão) -->
-          <button id="tabColaboradorBtn" onclick="selectAppProfile('colaborador-supervisor')" class="flex-1 flex items-center justify-center gap-2.5 py-3 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-bold brand-gradient-bg text-white shadow-md transition-all">
+          <button id="tabColaboradorBtn" onclick="selectAppProfile('colaborador-supervisor')" class="flex-1 flex items-center justify-center gap-2.5 py-3 px-3 sm:px-5 rounded-xl text-xs sm:text-sm font-extrabold brand-gradient-bg text-white shadow-lg transition-all duration-300">
             <i class="bi bi-person-badge text-xl"></i>
             <span>Colaborador-Supervisor</span>
           </button>
           
           <!-- Botão Gestor -->
-          <button id="tabGestorBtn" onclick="selectAppProfile('gestor')" class="flex-1 flex items-center justify-center gap-2.5 py-3 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-200 transition-all">
+          <button id="tabGestorBtn" onclick="selectAppProfile('gestor')" class="flex-1 flex items-center justify-center gap-2.5 py-3 px-3 sm:px-5 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-100 transition-all duration-300">
             <i class="bi bi-briefcase text-xl"></i>
             <span>Gestor</span>
           </button>
@@ -257,11 +335,11 @@
         </div>
       </div>
 
-      <!-- Centro de Download Oficial Adaptativo -->
-      <div class="max-w-4xl mx-auto text-center space-y-5 sm:space-y-6">
+      <!-- Centro de Download Oficial Adaptativo com Transição Suave -->
+      <div id="heroContentWrapper" class="max-w-4xl mx-auto text-center space-y-6 sm:space-y-7 app-switch-anim">
         
-        <!-- Selo de Destaque das Vantagens (Ícones Nítidos e Visíveis) -->
-        <div class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-3 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/25 text-orange-400 text-xs sm:text-sm font-semibold tracking-wide">
+        <!-- Selo de Destaque das Vantagens -->
+        <div class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-3 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/25 text-orange-400 text-xs sm:text-sm font-semibold tracking-wide shadow-sm">
           <span class="w-2.5 h-2.5 rounded-full bg-orange-500 animate-pulse"></span>
           <span class="inline-flex items-center gap-1.5"><i class="bi bi-geo-alt-fill text-base"></i> Postos & Geofencing</span>
           <span class="text-slate-600 hidden xs:inline">•</span>
@@ -281,19 +359,19 @@
           A maior vantagem em campo: <strong>postos com Geofencing</strong> (raio de segurança autorizado), execução de <strong>tarefas recorrentes e extras</strong>, rondas com QR Code e comprovação por <strong>evidências fotográficas</strong>.
         </p>
 
-        <!-- Card Central de Download Adaptativo -->
-        <div class="p-5 sm:p-9 rounded-2xl sm:rounded-[32px] glass-card border-orange-500/30 relative overflow-hidden shadow-2xl space-y-5 sm:space-y-6">
-          <div class="absolute -right-24 -top-24 w-72 h-72 bg-orange-500/15 rounded-full blur-3xl pointer-events-none"></div>
-          <div class="absolute -left-24 -bottom-24 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <!-- Card Central de Download Adaptativo com Glow Suave -->
+        <div class="p-6 sm:p-10 rounded-3xl glass-card-pro border-orange-500/35 relative overflow-hidden shadow-2xl space-y-6 sm:space-y-7">
+          <div class="absolute -right-24 -top-24 w-80 h-80 bg-orange-500/15 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="absolute -left-24 -bottom-24 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-          <div class="relative z-10 flex flex-col items-center gap-5 sm:gap-6">
+          <div class="relative z-10 flex flex-col items-center gap-6">
             
-            <!-- Botão Principal de Download (Ícones Ampliados e Claros) -->
-            <a href="next-facilities-colaborador-supervisor-v1.0.0.apk" download="next-facilities-colaborador-supervisor-v1.0.0.apk" id="mainDownloadBtn" class="group relative w-full sm:w-auto inline-flex items-center justify-center gap-4 sm:gap-5 brand-gradient-bg text-white font-extrabold text-base sm:text-xl py-4 sm:py-5 px-6 sm:px-10 rounded-2xl shadow-2xl shadow-orange-500/35 hover:shadow-orange-500/50 hover:scale-[1.01] active:scale-[0.98] transition-all overflow-hidden">
-              <div class="absolute inset-0 w-1/2 h-full bg-white/20 skew-x-12 -translate-x-full group-hover:translate-x-[300%] transition-transform duration-1000"></div>
+            <!-- Botão Principal de Download com Shimmer e Efeito Hover -->
+            <a href="next-facilities-colaborador-supervisor-v1.0.0.apk" download="next-facilities-colaborador-supervisor-v1.0.0.apk" id="mainDownloadBtn" class="group relative w-full sm:w-auto inline-flex items-center justify-center gap-4 sm:gap-5 brand-gradient-bg text-white font-extrabold text-base sm:text-xl py-4 sm:py-5 px-7 sm:px-11 rounded-2xl shadow-2xl shadow-orange-500/35 hover:shadow-orange-500/50 hover:scale-[1.015] active:scale-[0.985] transition-all duration-300 overflow-hidden">
+              <div class="btn-shimmer"></div>
               
-              <!-- Ícone do Android em Tamanho de Destaque -->
-              <i class="bi bi-android2 text-4xl sm:text-5xl text-white flex-shrink-0"></i>
+              <!-- Ícone do Android em Destaque -->
+              <i class="bi bi-android2 text-4xl sm:text-5xl text-white flex-shrink-0 group-hover:scale-105 transition-transform"></i>
 
               <div class="text-left">
                 <div id="btnSubtext" class="text-[10px] sm:text-xs uppercase tracking-wider font-extrabold text-orange-100 leading-none">Download Oficial APK Android</div>
@@ -305,23 +383,23 @@
               </div>
             </a>
 
-            <!-- Ações Rápidas com Ícones Grandes -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 w-full">
+            <!-- Ações Rápidas com Ícones Grandes e Bordas Elegantes -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full">
               
               <!-- Copiar Link Oficial -->
-              <button onclick="copyCurrentDownloadLink()" id="copyLinkBtn" class="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-orange-500/10 hover:bg-orange-500/20 active:bg-orange-500/25 border border-orange-500/30 text-orange-300 font-semibold text-xs sm:text-sm transition-all">
+              <button onclick="copyCurrentDownloadLink()" id="copyLinkBtn" class="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-orange-500/10 hover:bg-orange-500/20 active:bg-orange-500/25 border border-orange-500/30 text-orange-300 font-bold text-xs sm:text-sm transition-all shadow-sm">
                 <i class="bi bi-link-45deg text-xl text-orange-400 flex-shrink-0"></i>
                 <span id="copyLinkText">Copiar Link do APK</span>
               </button>
 
               <!-- Primeiro Acesso -->
-              <a href="#primeiro-acesso" class="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-white/5 hover:bg-white/10 active:bg-white/15 border border-white/10 text-slate-200 font-semibold text-xs sm:text-sm transition-all">
+              <a href="#primeiro-acesso" class="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-white/5 hover:bg-white/10 active:bg-white/15 border border-white/10 text-slate-200 font-semibold text-xs sm:text-sm transition-all shadow-sm">
                 <i class="bi bi-person-vcard text-xl text-orange-400 flex-shrink-0"></i>
                 <span>Primeiro Acesso (CPF)</span>
               </a>
 
               <!-- Como Instalar -->
-              <a href="#instalacao" class="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-white/5 hover:bg-white/10 active:bg-white/15 border border-white/10 text-slate-200 font-semibold text-xs sm:text-sm transition-all">
+              <a href="#instalacao" class="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-white/5 hover:bg-white/10 active:bg-white/15 border border-white/10 text-slate-200 font-semibold text-xs sm:text-sm transition-all shadow-sm">
                 <i class="bi bi-info-circle text-xl text-orange-400 flex-shrink-0"></i>
                 <span>Como Instalar APK</span>
               </a>
@@ -329,7 +407,7 @@
             </div>
 
             <!-- Dica Mobile Rápida -->
-            <div class="sm:hidden w-full p-4 rounded-2xl bg-slate-950/70 border border-white/10 text-left flex items-start gap-3.5">
+            <div class="sm:hidden w-full p-4 rounded-2xl bg-slate-950/80 border border-white/10 text-left flex items-start gap-3.5">
               <div class="w-10 h-10 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center flex-shrink-0 mt-0.5">
                 <i class="bi bi-phone text-2xl"></i>
               </div>
@@ -339,8 +417,8 @@
               </div>
             </div>
 
-            <!-- Metadados e Garantias com Ícones Ampliados -->
-            <div class="pt-2 flex flex-wrap items-center justify-center gap-3 sm:gap-8 text-xs sm:text-sm text-slate-400 border-t border-white/5 w-full">
+            <!-- Metadados e Garantias -->
+            <div class="pt-3 flex flex-wrap items-center justify-center gap-3 sm:gap-8 text-xs sm:text-sm text-slate-400 border-t border-white/5 w-full">
               <span class="inline-flex items-center gap-2 font-medium">
                 <i class="bi bi-shield-check text-orange-400 text-lg"></i>
                 Hospedagem: <strong class="text-slate-200 font-mono">nextfacilities.inovagui.com.br</strong>
@@ -375,7 +453,7 @@
         </div>
 
         <!-- Banner Diferencial Estrutural -->
-        <div class="p-5 rounded-2xl badge-highlight max-w-3xl mx-auto flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+        <div class="p-5 rounded-2xl badge-highlight max-w-3xl mx-auto flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left shadow-lg">
           <div class="w-14 h-14 rounded-2xl bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold flex-shrink-0">
             <i class="bi bi-geo-alt-fill text-3xl"></i>
           </div>
@@ -392,31 +470,31 @@
     </section>
 
     <!-- NÚMEROS E INDICADORES RÁPIDOS -->
-    <section class="border-y border-white/5 bg-slate-950/60 py-8 sm:py-10 relative">
+    <section class="border-y border-white/5 bg-slate-950/70 py-9 sm:py-12 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
           
-          <div class="p-4 sm:p-5 rounded-2xl glass-card border-orange-500/20">
-            <div class="text-2xl sm:text-4xl font-extrabold brand-gradient-text">Geofencing</div>
-            <div class="text-xs sm:text-sm font-semibold text-slate-200 mt-1">Raio do Posto</div>
+          <div class="p-5 rounded-2xl glass-card-pro border-orange-500/20 reveal-item">
+            <div class="text-3xl sm:text-4xl font-extrabold brand-gradient-text">Geofencing</div>
+            <div class="text-xs sm:text-sm font-bold text-slate-200 mt-1">Raio do Posto</div>
             <div class="text-[11px] text-slate-400 mt-0.5">100% validado por satélite</div>
           </div>
 
-          <div class="p-4 sm:p-5 rounded-2xl glass-card">
-            <div class="text-2xl sm:text-4xl font-extrabold text-orange-400">Recorrentes</div>
-            <div class="text-xs sm:text-sm font-semibold text-slate-200 mt-1">& Tarefas Extras</div>
+          <div class="p-5 rounded-2xl glass-card-pro reveal-item">
+            <div class="text-3xl sm:text-4xl font-extrabold text-orange-400">Recorrentes</div>
+            <div class="text-xs sm:text-sm font-bold text-slate-200 mt-1">& Tarefas Extras</div>
             <div class="text-[11px] text-slate-400 mt-0.5">Geradas na entrada do posto</div>
           </div>
 
-          <div class="p-4 sm:p-5 rounded-2xl glass-card border-orange-500/30">
-            <div class="text-2xl sm:text-4xl font-extrabold brand-gradient-text">Até 3</div>
-            <div class="text-xs sm:text-sm font-semibold text-orange-300 mt-1">Evidências por Ação</div>
+          <div class="p-5 rounded-2xl glass-card-pro border-orange-500/30 reveal-item">
+            <div class="text-3xl sm:text-4xl font-extrabold brand-gradient-text">Até 3</div>
+            <div class="text-xs sm:text-sm font-bold text-orange-300 mt-1">Evidências por Ação</div>
             <div class="text-[11px] text-orange-400/80 mt-0.5">Fotos auditáveis na nuvem</div>
           </div>
 
-          <div class="p-4 sm:p-5 rounded-2xl glass-card">
-            <div class="text-2xl sm:text-4xl font-extrabold text-slate-200">2 Perfis</div>
-            <div class="text-xs sm:text-sm font-semibold text-slate-200 mt-1">Campo & Gestor</div>
+          <div class="p-5 rounded-2xl glass-card-pro reveal-item">
+            <div class="text-3xl sm:text-4xl font-extrabold text-slate-200">2 Perfis</div>
+            <div class="text-xs sm:text-sm font-bold text-slate-200 mt-1">Campo & Gestor</div>
             <div class="text-[11px] text-slate-400 mt-0.5">100% integrados no sistema</div>
           </div>
 
@@ -424,16 +502,16 @@
       </div>
     </section>
 
-    <!-- SEÇÃO DESTAQUE MÁXIMO: POSTOS & GEOFENCING SEGUIDO DE TAREFAS RECORRENTES E EXTRAS -->
-    <section id="postos-geofencing" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+    <!-- SEÇÃO DESTAQUE MÁXIMO: POSTOS & GEOFENCING COM RADAR ANIMADO -->
+    <section id="postos-geofencing" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-24">
       
       <!-- Cabeçalho da Seção de Maior Vantagem -->
-      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-3">
-        <span class="inline-flex items-center gap-1.5 text-orange-400 text-xs font-extrabold uppercase tracking-widest bg-orange-500/10 px-3.5 py-1 rounded-full border border-orange-500/25">
-          <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3.5 reveal-item">
+        <span class="inline-flex items-center gap-1.5 text-orange-400 text-xs font-extrabold uppercase tracking-widest bg-orange-500/10 px-4 py-1.5 rounded-full border border-orange-500/25">
+          <span class="w-2.5 h-2.5 rounded-full bg-orange-500 animate-pulse"></span>
           A Maior Vantagem da Operação
         </span>
-        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
           Postos & Geofencing: <br class="hidden sm:inline" />
           <span class="brand-gradient-text">A Maior Vantagem do Next Facilities</span>
         </h2>
@@ -446,12 +524,12 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
         
         <!-- CARD PILAR 1: Postos & Geofencing -->
-        <div class="p-6 sm:p-9 rounded-3xl glass-card border-2 border-orange-500/30 relative overflow-hidden flex flex-col justify-between shadow-2xl">
+        <div class="p-6 sm:p-9 rounded-3xl glass-card-pro border-2 border-orange-500/35 relative overflow-hidden flex flex-col justify-between shadow-2xl reveal-item">
           <div class="absolute -right-20 -top-20 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
           
-          <div class="space-y-5 relative z-10">
+          <div class="space-y-6 relative z-10">
             <div class="flex items-center justify-between">
-              <span class="text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30 flex items-center gap-1.5">
+              <span class="text-[11px] font-extrabold uppercase tracking-wider px-3.5 py-1 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30 flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-orange-400 animate-pulse"></span>
                 Vantagem Principal #1
               </span>
@@ -462,13 +540,13 @@
 
             <div>
               <h3 class="text-xl sm:text-2xl font-extrabold text-white">Postos com Geofencing Inteligente</h3>
-              <p class="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
+              <p class="text-xs sm:text-sm text-slate-300 mt-1.5 leading-relaxed">
                 Cada posto de trabalho (portaria, prédio, condomínio, hospital ou fábrica) possui um <strong>raio geográfico seguro</strong> parametrizado no sistema.
               </p>
             </div>
 
-            <!-- Simulação Visual do Geofencing / Radar -->
-            <div class="p-4 rounded-2xl bg-slate-950/80 border border-white/10 space-y-3">
+            <!-- Simulação Visual do Geofencing / Radar Tecnológico com Scanner Ativo -->
+            <div class="p-5 rounded-2xl bg-slate-950/90 border border-white/10 space-y-3.5">
               <div class="flex items-center justify-between text-xs sm:text-sm">
                 <div class="flex items-center gap-2 text-white font-bold">
                   <span class="w-3 h-3 rounded-full bg-orange-400"></span>
@@ -477,30 +555,31 @@
                 <span class="text-orange-400 font-bold font-mono text-xs">Raio: 50 metros</span>
               </div>
 
-              <!-- Radar Visual com Efeito Wave -->
-              <div class="relative h-28 sm:h-32 rounded-xl bg-gradient-to-b from-slate-900 to-slate-950 border border-orange-500/20 flex items-center justify-center overflow-hidden">
-                <div class="absolute w-24 h-24 rounded-full border border-orange-500/30"></div>
-                <div class="absolute w-16 h-16 rounded-full border border-orange-500/40"></div>
-                <div class="absolute w-24 h-24 rounded-full bg-orange-500/10 radar-pulse"></div>
+              <!-- Radar Visual com Efeito Scanner e Wave -->
+              <div class="relative h-32 sm:h-36 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-orange-500/20 flex items-center justify-center overflow-hidden">
+                <div class="absolute w-28 h-28 rounded-full border border-orange-500/25"></div>
+                <div class="absolute w-20 h-20 rounded-full border border-orange-500/35"></div>
+                <div class="absolute w-28 h-28 rounded-full radar-sweep-pro"></div>
+                <div class="absolute w-28 h-28 rounded-full bg-orange-500/10 radar-pulse-pro"></div>
                 
                 <div class="relative z-10 flex flex-col items-center">
-                  <div class="w-10 h-10 rounded-full brand-gradient-bg flex items-center justify-center text-white shadow-lg shadow-orange-500/40 font-bold">
-                    <i class="bi bi-geo-alt-fill text-xl text-white"></i>
+                  <div class="w-11 h-11 rounded-full brand-gradient-bg flex items-center justify-center text-white shadow-xl shadow-orange-500/50 font-bold">
+                    <i class="bi bi-geo-alt-fill text-2xl text-white"></i>
                   </div>
-                  <span class="text-[11px] font-bold text-orange-300 mt-1.5 bg-slate-950/90 px-2.5 py-0.5 rounded border border-orange-500/30 flex items-center gap-1.5">
+                  <span class="text-[11px] font-bold text-orange-300 mt-2 bg-slate-950/90 px-3 py-0.5 rounded-full border border-orange-500/35 flex items-center gap-1.5 shadow">
                     Você está dentro do raio do posto <i class="bi bi-check-circle-fill text-orange-400 text-sm"></i>
                   </span>
                 </div>
               </div>
 
               <div class="text-xs text-slate-400 flex items-center justify-between pt-1">
-                <span>Ponto Eletrônico: <strong class="text-orange-400">Liberado</strong></span>
-                <span>Ronda do Posto: <strong class="text-orange-400">Autorizada</strong></span>
+                <span>Ponto Eletrônico: <strong class="text-orange-400 font-bold">Liberado</strong></span>
+                <span>Ronda do Posto: <strong class="text-orange-400 font-bold">Autorizada</strong></span>
               </div>
             </div>
 
-            <!-- Lista de Benefícios de Geofencing com Ícones Maiores -->
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+            <!-- Lista de Benefícios de Geofencing -->
+            <ul class="space-y-3.5 text-xs sm:text-sm text-slate-300">
               <li class="flex items-start gap-3">
                 <i class="bi bi-check-circle-fill text-orange-400 text-lg flex-shrink-0 mt-0.5"></i>
                 <span><strong>Presença Inquestionável:</strong> Bater ponto ou registrar ronda fora do posto físico é impossível. Zero divergências.</span>
@@ -516,7 +595,7 @@
             </ul>
           </div>
 
-          <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
+          <div class="mt-7 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
             <span>Precisão: Alta acurácia GPS</span>
             <span class="text-orange-400 font-bold flex items-center gap-1.5">
               <i class="bi bi-shield-check text-base"></i> 100% Blindado
@@ -525,12 +604,12 @@
         </div>
 
         <!-- CARD PILAR 2: Tarefas Recorrentes e Extras -->
-        <div class="p-6 sm:p-9 rounded-3xl glass-card border-2 border-orange-500/30 relative overflow-hidden flex flex-col justify-between shadow-2xl">
+        <div class="p-6 sm:p-9 rounded-3xl glass-card-pro border-2 border-orange-500/35 relative overflow-hidden flex flex-col justify-between shadow-2xl reveal-item">
           <div class="absolute -right-20 -top-20 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
           
-          <div class="space-y-5 relative z-10">
+          <div class="space-y-6 relative z-10">
             <div class="flex items-center justify-between">
-              <span class="text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30 flex items-center gap-1.5">
+              <span class="text-[11px] font-extrabold uppercase tracking-wider px-3.5 py-1 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30 flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-orange-400"></span>
                 Vantagem Essencial #2
               </span>
@@ -541,13 +620,13 @@
 
             <div>
               <h3 class="text-xl sm:text-2xl font-extrabold text-white">Tarefas Recorrentes & Extras</h3>
-              <p class="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
+              <p class="text-xs sm:text-sm text-slate-300 mt-1.5 leading-relaxed">
                 Ao registrar o ponto no posto, sua rotina do dia é gerada no app, com flexibilidade total para demandas e chamados extras em tempo real.
               </p>
             </div>
 
             <!-- Simulação Visual das Tarefas -->
-            <div class="p-4 rounded-2xl bg-slate-950/80 border border-white/10 space-y-3">
+            <div class="p-5 rounded-2xl bg-slate-950/90 border border-white/10 space-y-3.5">
               <div class="flex items-center justify-between text-xs sm:text-sm pb-1 border-b border-white/5">
                 <span class="font-bold text-white">Painel de Atividades do Posto</span>
                 <span class="text-orange-400 font-bold text-xs">Gerado no Ponto</span>
@@ -556,7 +635,7 @@
               <!-- Item 1: Tarefa Recorrente -->
               <div class="p-3 rounded-xl bg-white/5 flex items-center justify-between text-xs">
                 <div class="flex items-center gap-3">
-                  <span class="w-8 h-8 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold text-base flex-shrink-0">
+                  <span class="w-9 h-9 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold text-lg flex-shrink-0">
                     <i class="bi bi-arrow-repeat"></i>
                   </span>
                   <div>
@@ -572,7 +651,7 @@
               <!-- Item 2: Tarefa Extra -->
               <div class="p-3 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-between text-xs">
                 <div class="flex items-center gap-3">
-                  <span class="w-8 h-8 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold text-base flex-shrink-0">
+                  <span class="w-9 h-9 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold text-lg flex-shrink-0">
                     <i class="bi bi-exclamation-triangle"></i>
                   </span>
                   <div>
@@ -585,7 +664,7 @@
             </div>
 
             <!-- Lista de Benefícios de Tarefas Recorrentes e Extras -->
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+            <ul class="space-y-3.5 text-xs sm:text-sm text-slate-300">
               <li class="flex items-start gap-3">
                 <i class="bi bi-check-circle-fill text-orange-400 text-lg flex-shrink-0 mt-0.5"></i>
                 <span><strong>Geração Automática na Entrada:</strong> Sem formulários manuais. Bateu o ponto no posto, suas tarefas recorrentes aparecem prontas.</span>
@@ -601,7 +680,7 @@
             </ul>
           </div>
 
-          <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
+          <div class="mt-7 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
             <span>Sincronização: Tempo Real</span>
             <span class="text-orange-400 font-bold flex items-center gap-1.5">
               <i class="bi bi-cloud-check text-base"></i> 100% Integrado
@@ -614,13 +693,13 @@
     </section>
 
     <!-- SEÇÃO PRINCIPAL DE RECURSOS (ÍCONES GRANDES E BEM DESTACADOS) -->
-    <section id="recursos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+    <section id="recursos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-24">
       
-      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-2.5">
-        <span class="text-orange-400 text-xs font-extrabold uppercase tracking-widest bg-orange-500/10 px-3.5 py-1 rounded-full border border-orange-500/20">
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3 reveal-item">
+        <span class="text-orange-400 text-xs font-extrabold uppercase tracking-widest bg-orange-500/10 px-4 py-1.5 rounded-full border border-orange-500/20">
           Recursos Integrados
         </span>
-        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
           Tudo que a operação e o gestor precisam
         </h2>
         <p class="text-slate-400 text-sm sm:text-base">
@@ -628,19 +707,19 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
         <!-- Recurso 1: Postos & Geofencing -->
-        <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col justify-between border-orange-500/30">
+        <div class="glass-card-pro rounded-3xl p-7 sm:p-8 flex flex-col justify-between border-orange-500/30 reveal-item">
           <div>
             <div class="flex items-center justify-between mb-5">
-              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 shadow-md">
-                <i class="bi bi-geo-alt-fill text-2xl sm:text-3xl"></i>
+              <div class="w-16 h-16 rounded-2xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 shadow-lg group-hover:scale-105 transition-transform">
+                <i class="bi bi-geo-alt-fill text-3xl"></i>
               </div>
-              <span class="text-[10px] font-extrabold px-2.5 py-1 rounded-full bg-orange-500/20 text-orange-300 uppercase tracking-wide border border-orange-500/30">Maior Vantagem</span>
+              <span class="text-[10px] font-extrabold px-3 py-1 rounded-full bg-orange-500/20 text-orange-300 uppercase tracking-wide border border-orange-500/30">Maior Vantagem</span>
             </div>
-            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Postos & Geofencing (Cerca Virtual)</h3>
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            <h3 class="text-xl font-bold text-white mb-2">Postos & Geofencing (Cerca Virtual)</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
               Marcação de ponto e visitas a postos com validação matemática de raio geográfico. Impossível registrar presença fora do perímetro autorizado do contrato.
             </p>
           </div>
@@ -651,16 +730,16 @@
         </div>
 
         <!-- Recurso 2: Tarefas Recorrentes e Extras -->
-        <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col justify-between border-orange-500/30">
+        <div class="glass-card-pro rounded-3xl p-7 sm:p-8 flex flex-col justify-between border-orange-500/30 reveal-item">
           <div>
             <div class="flex items-center justify-between mb-5">
-              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 shadow-md">
-                <i class="bi bi-arrow-repeat text-2xl sm:text-3xl"></i>
+              <div class="w-16 h-16 rounded-2xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 shadow-lg">
+                <i class="bi bi-arrow-repeat text-3xl"></i>
               </div>
-              <span class="text-[10px] font-extrabold px-2.5 py-1 rounded-full bg-orange-500/20 text-orange-300 uppercase tracking-wide border border-orange-500/30">Destaque Operacional</span>
+              <span class="text-[10px] font-extrabold px-3 py-1 rounded-full bg-orange-500/20 text-orange-300 uppercase tracking-wide border border-orange-500/30">Destaque Operacional</span>
             </div>
-            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Tarefas Recorrentes & Extras</h3>
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            <h3 class="text-xl font-bold text-white mb-2">Tarefas Recorrentes & Extras</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
               Ao bater o ponto de entrada no posto, sua rotina do dia é gerada automaticamente. Atribuição de tarefas extras e coberturas emergenciais em tempo real.
             </p>
           </div>
@@ -671,16 +750,16 @@
         </div>
 
         <!-- Recurso 3: Rondas e Postos de Controle -->
-        <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+        <div class="glass-card-pro rounded-3xl p-7 sm:p-8 flex flex-col justify-between reveal-item">
           <div>
             <div class="flex items-center justify-between mb-5">
-              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 shadow-md">
-                <i class="bi bi-qr-code-scan text-2xl sm:text-3xl"></i>
+              <div class="w-16 h-16 rounded-2xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 shadow-lg">
+                <i class="bi bi-qr-code-scan text-3xl"></i>
               </div>
-              <span class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-orange-500/20 text-orange-300 uppercase tracking-wide">Rondas Auditadas</span>
+              <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-orange-500/20 text-orange-300 uppercase tracking-wide">Rondas Auditadas</span>
             </div>
-            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Rondas & Postos de Ronda</h3>
-            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            <h3 class="text-xl font-bold text-white mb-2">Rondas & Postos de Ronda</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
               Mapeamento de postos físicos de ronda no contrato. Leitura de QR Code, conferência de satélite GPS e registro cronológico rigoroso de passagem.
             </p>
           </div>
@@ -691,16 +770,16 @@
         </div>
 
         <!-- Recurso 4: Evidências Fotográficas -->
-        <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+        <div class="glass-card-pro rounded-3xl p-7 sm:p-8 flex flex-col justify-between reveal-item">
           <div>
             <div class="flex items-center justify-between mb-5">
-              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 shadow-md">
-                <i class="bi bi-camera-fill text-2xl sm:text-3xl"></i>
+              <div class="w-16 h-16 rounded-2xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 shadow-lg">
+                <i class="bi bi-camera-fill text-3xl"></i>
               </div>
-              <span class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-orange-500/20 text-orange-300 uppercase tracking-wide">Até 3 Fotos</span>
+              <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-orange-500/20 text-orange-300 uppercase tracking-wide">Até 3 Fotos</span>
             </div>
-            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Evidências Fotográficas</h3>
-            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            <h3 class="text-xl font-bold text-white mb-2">Evidências Fotográficas</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
               Capture fotos diretamente pelo aplicativo para comprovar a realização de tarefas e rondas, com data, horário e localização do posto gravados.
             </p>
           </div>
@@ -711,16 +790,16 @@
         </div>
 
         <!-- Recurso 5: Painel do Gestor -->
-        <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col justify-between border-orange-500/20">
+        <div class="glass-card-pro rounded-3xl p-7 sm:p-8 flex flex-col justify-between border-orange-500/25 reveal-item">
           <div>
             <div class="flex items-center justify-between mb-5">
-              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 shadow-md">
-                <i class="bi bi-briefcase-fill text-2xl sm:text-3xl"></i>
+              <div class="w-16 h-16 rounded-2xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 shadow-lg">
+                <i class="bi bi-briefcase-fill text-3xl"></i>
               </div>
-              <span class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-orange-500/20 text-orange-300 uppercase tracking-wide">Gestor</span>
+              <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-orange-500/20 text-orange-300 uppercase tracking-wide">Gestor</span>
             </div>
-            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Painel e Controle do Gestor</h3>
-            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            <h3 class="text-xl font-bold text-white mb-2">Painel e Controle do Gestor</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
               Acompanhamento de postos, parametrização de cercas de Geofencing, aprovação de tarefas extras e consulta a relatórios consolidados em tempo real.
             </p>
           </div>
@@ -731,16 +810,16 @@
         </div>
 
         <!-- Recurso 6: Assistente Next IA -->
-        <div class="glass-card glass-card-hover rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+        <div class="glass-card-pro rounded-3xl p-7 sm:p-8 flex flex-col justify-between reveal-item">
           <div>
             <div class="flex items-center justify-between mb-5">
-              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl brand-gradient-bg flex items-center justify-center text-white shadow-md shadow-orange-500/25">
-                <i class="bi bi-stars text-2xl sm:text-3xl"></i>
+              <div class="w-16 h-16 rounded-2xl brand-gradient-bg flex items-center justify-center text-white shadow-xl shadow-orange-500/25">
+                <i class="bi bi-stars text-3xl"></i>
               </div>
-              <span class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-slate-800 text-orange-300 uppercase tracking-wide">Voz & Texto</span>
+              <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-slate-800 text-orange-300 uppercase tracking-wide">Voz & Texto</span>
             </div>
-            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Assistente Next IA</h3>
-            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            <h3 class="text-xl font-bold text-white mb-2">Assistente Next IA</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
               Tire dúvidas por voz ou texto sobre suas escalas, horários, postos atribuídos e orientações do contrato de forma rápida e inteligente.
             </p>
           </div>
@@ -755,20 +834,20 @@
     </section>
 
     <!-- SEÇÃO EXCLUSIVA DE DESTAQUE: EVIDÊNCIAS FOTOGRÁFICAS -->
-    <section id="evidencias" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-      <div class="p-6 sm:p-12 rounded-[28px] sm:rounded-[36px] bg-gradient-to-br from-slate-900 via-[#131b2b] to-slate-900 border-2 border-orange-500/40 relative overflow-hidden shadow-2xl">
+    <section id="evidencias" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+      <div class="p-7 sm:p-14 rounded-[32px] sm:rounded-[40px] bg-gradient-to-br from-[#0c121e] via-[#111827] to-[#0c121e] border-2 border-orange-500/35 relative overflow-hidden shadow-2xl reveal-item">
         <div class="absolute -right-20 -top-20 w-80 h-80 bg-orange-500/15 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
           
-          <div class="lg:col-span-7 space-y-4 sm:space-y-5 text-left">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/20 text-orange-400 text-xs font-extrabold uppercase tracking-wider border border-orange-500/30">
+          <div class="lg:col-span-7 space-y-5 text-left">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/20 text-orange-400 text-xs font-extrabold uppercase tracking-wider border border-orange-500/30">
               <i class="bi bi-camera-fill text-base"></i>
               <span>Comprovação Inquestionável</span>
             </div>
 
-            <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+            <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
               Evidências Fotográficas: <br class="hidden sm:inline" />
               <span class="brand-gradient-text">A Prova Visual do Seu Serviço no Posto</span>
             </h2>
@@ -777,45 +856,45 @@
               No Next Facilities, cada tarefa recorrente ou extra e cada ronda contam com comprovação real. Você tira a foto diretamente pelo aplicativo, garantindo total segurança para a equipe e confiança total para os clientes.
             </p>
 
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-2">
-              <div class="p-4 rounded-2xl bg-slate-950/70 border border-white/10">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <div class="p-4 sm:p-5 rounded-2xl bg-slate-950/80 border border-white/10 shadow-md">
                 <div class="text-xl sm:text-2xl font-extrabold text-orange-400 flex items-center gap-2">
                   <i class="bi bi-images text-lg"></i> Até 3 Fotos
                 </div>
-                <div class="text-xs text-slate-300 font-semibold mt-1">Por Atividade</div>
+                <div class="text-xs text-slate-300 font-bold mt-1">Por Atividade</div>
                 <div class="text-[11px] text-slate-500 mt-0.5">Antes, durante ou após</div>
               </div>
 
-              <div class="p-4 rounded-2xl bg-slate-950/70 border border-white/10">
+              <div class="p-4 sm:p-5 rounded-2xl bg-slate-950/80 border border-white/10 shadow-md">
                 <div class="text-xl sm:text-2xl font-extrabold text-white flex items-center gap-2">
                   <i class="bi bi-shield-check text-orange-400 text-lg"></i> Auditável
                 </div>
-                <div class="text-xs text-slate-300 font-semibold mt-1">Data, Hora e Satélite</div>
+                <div class="text-xs text-slate-300 font-bold mt-1">Data, Hora e Satélite</div>
                 <div class="text-[11px] text-slate-500 mt-0.5">Vinculado ao Geofencing</div>
               </div>
 
-              <div class="p-4 rounded-2xl bg-slate-950/70 border border-white/10">
+              <div class="p-4 sm:p-5 rounded-2xl bg-slate-950/80 border border-white/10 shadow-md">
                 <div class="text-xl sm:text-2xl font-extrabold text-orange-400 flex items-center gap-2">
                   <i class="bi bi-cloud-arrow-up text-lg"></i> Instantâneo
                 </div>
-                <div class="text-xs text-slate-300 font-semibold mt-1">Nuvem Segura</div>
+                <div class="text-xs text-slate-300 font-bold mt-1">Nuvem Segura</div>
                 <div class="text-[11px] text-slate-500 mt-0.5">Sem pesar a memória</div>
               </div>
             </div>
           </div>
 
           <div class="lg:col-span-5 flex justify-center">
-            <div class="w-full max-w-sm p-6 rounded-3xl bg-slate-950/95 border border-orange-500/30 text-left shadow-xl space-y-4">
-              <div class="flex items-center justify-between border-b border-white/10 pb-3">
+            <div class="w-full max-w-sm p-6 sm:p-7 rounded-3xl bg-slate-950/95 border border-orange-500/35 text-left shadow-2xl space-y-4">
+              <div class="flex items-center justify-between border-b border-white/10 pb-3.5">
                 <span class="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-2">
                   <i class="bi bi-camera text-orange-400 text-base"></i> Evidência Operacional
                 </span>
                 <span class="text-[10px] font-bold px-2.5 py-0.5 rounded bg-orange-500/20 text-orange-300">Validada no Posto</span>
               </div>
 
-              <div class="relative rounded-2xl overflow-hidden aspect-video bg-gradient-to-tr from-slate-900 to-slate-800 border border-white/10 flex items-center justify-center text-slate-400">
+              <div class="relative rounded-2xl overflow-hidden aspect-video bg-gradient-to-tr from-slate-900 to-slate-800 border border-white/10 flex items-center justify-center text-slate-400 shadow-inner">
                 <div class="text-center p-4">
-                  <i class="bi bi-image text-5xl text-orange-400 mx-auto mb-2 block"></i>
+                  <i class="bi bi-image text-5xl text-orange-400 mx-auto mb-2 block animate-pulse"></i>
                   <span class="text-xs font-semibold text-slate-300">Foto de Evidência Registrada</span>
                 </div>
               </div>
@@ -842,14 +921,14 @@
     </section>
 
     <!-- SEÇÃO PASSO A PASSO: PRIMEIRO ACESSO DO COLABORADOR -->
-    <section id="primeiro-acesso" class="border-t border-white/5 bg-slate-950/80 py-12 sm:py-20 relative">
+    <section id="primeiro-acesso" class="border-t border-white/5 bg-slate-950/80 py-14 sm:py-24 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-2.5">
-          <span class="text-orange-400 text-xs font-extrabold uppercase tracking-widest bg-orange-500/10 px-3.5 py-1 rounded-full border border-orange-500/20">
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3 reveal-item">
+          <span class="text-orange-400 text-xs font-extrabold uppercase tracking-widest bg-orange-500/10 px-4 py-1.5 rounded-full border border-orange-500/20">
             Acesso ao Aplicativo
           </span>
-          <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
             Como Fazer o Seu Primeiro Acesso
           </h2>
           <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
@@ -857,77 +936,77 @@
           </p>
         </div>
 
-        <!-- Box de Alerta do Pré-cadastro com Ícone Grande -->
-        <div class="mb-8 p-4 sm:p-5 rounded-2xl bg-orange-500/10 border border-orange-500/25 max-w-3xl mx-auto flex items-start gap-4 text-left">
+        <!-- Box de Alerta do Pré-cadastro -->
+        <div class="mb-10 p-5 rounded-2xl bg-orange-500/10 border border-orange-500/25 max-w-3xl mx-auto flex items-start gap-4 text-left shadow-md reveal-item">
           <i class="bi bi-info-circle text-orange-400 text-3xl flex-shrink-0 mt-0.5"></i>
           <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
             <strong class="text-orange-300">Atenção Colaborador:</strong> Seu pré-cadastro já foi realizado previamente no sistema. No primeiro acesso, você só precisa validar seu <strong>CPF</strong> e criar sua senha de uso diário.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           
           <!-- Passo 1 -->
-          <div class="p-5 sm:p-6 rounded-2xl sm:rounded-3xl glass-card relative group hover:border-orange-500/40 transition-all flex flex-col justify-between">
+          <div class="p-6 rounded-3xl glass-card-pro flex flex-col justify-between reveal-item">
             <div>
-              <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-md shadow-orange-500/20">
+              <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-lg shadow-orange-500/20">
                 1
               </div>
-              <h4 class="text-base sm:text-lg font-bold text-white mb-1.5">Abra a Tela Inicial</h4>
+              <h4 class="text-base sm:text-lg font-bold text-white mb-2">Abra a Tela Inicial</h4>
               <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
                 Abra o aplicativo Next Facilities instalado no seu celular. Na tela de entrada, localize a opção de primeiro acesso no rodapé.
               </p>
             </div>
-            <div class="mt-4 pt-3 border-t border-white/5 text-xs text-slate-400 font-medium flex items-center gap-2">
+            <div class="mt-5 pt-3.5 border-t border-white/5 text-xs text-slate-400 font-medium flex items-center gap-2">
               <i class="bi bi-phone text-base text-orange-400"></i> Tela Inicial de Entrada
             </div>
           </div>
 
           <!-- Passo 2 -->
-          <div class="p-5 sm:p-6 rounded-2xl sm:rounded-3xl glass-card relative group hover:border-orange-500/40 transition-all border-orange-500/30 flex flex-col justify-between">
+          <div class="p-6 rounded-3xl glass-card-pro border-orange-500/35 flex flex-col justify-between reveal-item">
             <div>
-              <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-md shadow-orange-500/20">
+              <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-lg shadow-orange-500/20">
                 2
               </div>
-              <h4 class="text-base sm:text-lg font-bold text-white mb-1.5">Clique em Primeiro Acesso</h4>
+              <h4 class="text-base sm:text-lg font-bold text-white mb-2">Clique em Primeiro Acesso</h4>
               <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
                 Toque no link destacado: <br />
                 <strong class="text-orange-400 font-bold">"É seu primeiro acesso? Clique aqui para entrar."</strong>
               </p>
             </div>
-            <div class="mt-4 pt-3 border-t border-white/5 text-xs text-orange-400 font-semibold flex items-center gap-2">
+            <div class="mt-5 pt-3.5 border-t border-white/5 text-xs text-orange-400 font-semibold flex items-center gap-2">
               <i class="bi bi-hand-index-thumb text-base"></i> Toque no link destacado
             </div>
           </div>
 
           <!-- Passo 3 -->
-          <div class="p-5 sm:p-6 rounded-2xl sm:rounded-3xl glass-card relative group hover:border-orange-500/40 transition-all flex flex-col justify-between">
+          <div class="p-6 rounded-3xl glass-card-pro flex flex-col justify-between reveal-item">
             <div>
-              <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-md shadow-orange-500/20">
+              <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-lg shadow-orange-500/20">
                 3
               </div>
-              <h4 class="text-base sm:text-lg font-bold text-white mb-1.5">Informe seu CPF</h4>
+              <h4 class="text-base sm:text-lg font-bold text-white mb-2">Informe seu CPF</h4>
               <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
                 Digite o número do seu <strong>CPF</strong> para validar o pré-cadastro efetuado e toque no botão <strong>Continuar</strong>.
               </p>
             </div>
-            <div class="mt-4 pt-3 border-t border-white/5 text-xs text-slate-400 font-medium flex items-center gap-2">
+            <div class="mt-5 pt-3.5 border-t border-white/5 text-xs text-slate-400 font-medium flex items-center gap-2">
               <i class="bi bi-person-vcard text-base text-orange-400"></i> Verificação cadastral
             </div>
           </div>
 
           <!-- Passo 4 -->
-          <div class="p-5 sm:p-6 rounded-2xl sm:rounded-3xl glass-card relative group hover:border-orange-500/40 transition-all flex flex-col justify-between border-orange-500/30">
+          <div class="p-6 rounded-3xl glass-card-pro border-orange-500/35 flex flex-col justify-between reveal-item">
             <div>
-              <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-md shadow-orange-500/20">
+              <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-lg shadow-orange-500/20">
                 4
               </div>
-              <h4 class="text-base sm:text-lg font-bold text-white mb-1.5">Defina E-mail e Senha</h4>
+              <h4 class="text-base sm:text-lg font-bold text-white mb-2">Defina E-mail e Senha</h4>
               <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
                 Preencha o <strong>e-mail da conta</strong> e cadastre a sua <strong>senha de acesso</strong>. Sua conta é ativada no mesmo instante!
               </p>
             </div>
-            <div class="mt-4 pt-3 border-t border-white/5 text-xs text-orange-400 font-bold flex items-center gap-2">
+            <div class="mt-5 pt-3.5 border-t border-white/5 text-xs text-orange-400 font-bold flex items-center gap-2">
               <i class="bi bi-check-circle-fill text-base"></i> Conta ativada com sucesso!
             </div>
           </div>
@@ -938,13 +1017,13 @@
     </section>
 
     <!-- GUIA DE INSTALAÇÃO DO APK NO ANDROID -->
-    <section id="instalacao" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+    <section id="instalacao" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-24">
       
-      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-2.5">
-        <span class="text-orange-400 text-xs font-extrabold uppercase tracking-widest bg-orange-500/10 px-3.5 py-1 rounded-full border border-orange-500/20">
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3 reveal-item">
+        <span class="text-orange-400 text-xs font-extrabold uppercase tracking-widest bg-orange-500/10 px-4 py-1.5 rounded-full border border-orange-500/20">
           Instalação Descomplicada
         </span>
-        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
           Como Instalar o APK no seu Celular Android
         </h2>
         <p class="text-slate-400 text-sm sm:text-base">
@@ -952,47 +1031,47 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
         
         <!-- Etapa 1 -->
-        <div class="p-5 sm:p-6 rounded-2xl sm:rounded-3xl glass-card relative group hover:border-orange-500/30 transition-all">
-          <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-md shadow-orange-500/20">
+        <div class="p-6 rounded-3xl glass-card-pro reveal-item">
+          <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-lg shadow-orange-500/20">
             1
           </div>
-          <h4 class="text-base sm:text-lg font-bold text-white mb-1.5">Baixe o Arquivo</h4>
+          <h4 class="text-base sm:text-lg font-bold text-white mb-2">Baixe o Arquivo</h4>
           <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
             Selecione seu perfil (Colaborador-Supervisor ou Gestor) e toque em baixar o instalador APK oficial.
           </p>
         </div>
 
         <!-- Etapa 2 -->
-        <div class="p-5 sm:p-6 rounded-2xl sm:rounded-3xl glass-card relative group hover:border-orange-500/30 transition-all">
-          <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-md shadow-orange-500/20">
+        <div class="p-6 rounded-3xl glass-card-pro reveal-item">
+          <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-lg shadow-orange-500/20">
             2
           </div>
-          <h4 class="text-base sm:text-lg font-bold text-white mb-1.5">Abra o Instalador</h4>
+          <h4 class="text-base sm:text-lg font-bold text-white mb-2">Abra o Instalador</h4>
           <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
             Ao finalizar o download, toque na notificação do navegador no topo da tela ou abra a pasta <strong>Downloads</strong> nos seus arquivos.
           </p>
         </div>
 
         <!-- Etapa 3 -->
-        <div class="p-5 sm:p-6 rounded-2xl sm:rounded-3xl glass-card relative group hover:border-orange-500/30 transition-all">
-          <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-md shadow-orange-500/20">
+        <div class="p-6 rounded-3xl glass-card-pro reveal-item">
+          <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-lg shadow-orange-500/20">
             3
           </div>
-          <h4 class="text-base sm:text-lg font-bold text-white mb-1.5">Autorize a Instalação</h4>
+          <h4 class="text-base sm:text-lg font-bold text-white mb-2">Autorize a Instalação</h4>
           <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
             Se o Android perguntar sobre segurança, toque em <strong>Configurações</strong> e ative <em>"Permitir desta fonte"</em>. O app corporativo é 100% seguro.
           </p>
         </div>
 
         <!-- Etapa 4 -->
-        <div class="p-5 sm:p-6 rounded-2xl sm:rounded-3xl glass-card relative group hover:border-orange-500/30 transition-all">
-          <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-md shadow-orange-500/20">
+        <div class="p-6 rounded-3xl glass-card-pro reveal-item">
+          <div class="w-12 h-12 rounded-2xl brand-gradient-bg flex items-center justify-center font-extrabold text-white text-lg mb-4 shadow-lg shadow-orange-500/20">
             4
           </div>
-          <h4 class="text-base sm:text-lg font-bold text-white mb-1.5">Conclua e Acesse</h4>
+          <h4 class="text-base sm:text-lg font-bold text-white mb-2">Conclua e Acesse</h4>
           <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
             Toque em <strong>Instalar</strong> e depois em <strong>Abrir</strong>. Realize seu primeiro acesso informando seu CPF cadastrado.
           </p>
@@ -1000,13 +1079,13 @@
 
       </div>
 
-      <!-- Selo de Confiança e Segurança com Ícone Grande -->
-      <div class="mt-8 sm:mt-12 p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-slate-900/60 border border-orange-500/20 max-w-4xl mx-auto flex flex-col sm:flex-row items-center gap-5 sm:gap-6">
-        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-orange-500/10 border border-orange-500/30 flex items-center justify-center text-orange-400 flex-shrink-0">
+      <!-- Selo de Confiança e Segurança -->
+      <div class="mt-10 sm:mt-14 p-7 sm:p-9 rounded-3xl bg-slate-950/80 border border-orange-500/25 max-w-4xl mx-auto flex flex-col sm:flex-row items-center gap-6 shadow-2xl reveal-item">
+        <div class="w-18 h-18 sm:w-20 sm:h-20 rounded-2xl bg-orange-500/10 border border-orange-500/30 flex items-center justify-center text-orange-400 flex-shrink-0 shadow-inner">
           <i class="bi bi-shield-check text-4xl sm:text-5xl"></i>
         </div>
         <div class="text-center sm:text-left space-y-1.5">
-          <h5 class="text-base sm:text-lg font-bold text-white">Aplicativos Oficiais & Assinados Digitalmente</h5>
+          <h5 class="text-base sm:text-lg font-extrabold text-white">Aplicativos Oficiais & Assinados Digitalmente</h5>
           <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
             O aviso padrão do navegador ao baixar arquivos APK é um procedimento de rotina do Android. Estes instaladores pertencem ao domínio corporativo <strong class="text-slate-300">nextfacilities.inovagui.com.br</strong> e possuem assinatura digital válida.
           </p>
@@ -1016,13 +1095,13 @@
     </section>
 
     <!-- DÚVIDAS FREQUENTES (FAQ) -->
-    <section id="faq" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+    <section id="faq" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-24">
       
-      <div class="text-center mb-10 sm:mb-16 space-y-2.5">
-        <span class="text-orange-400 text-xs font-extrabold uppercase tracking-widest bg-orange-500/10 px-3.5 py-1 rounded-full border border-orange-500/20">
+      <div class="text-center mb-12 sm:mb-16 space-y-3 reveal-item">
+        <span class="text-orange-400 text-xs font-extrabold uppercase tracking-widest bg-orange-500/10 px-4 py-1.5 rounded-full border border-orange-500/20">
           Perguntas Frequentes
         </span>
-        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
           Dúvidas Frequentes
         </h2>
         <p class="text-slate-400 text-sm sm:text-base">
@@ -1030,17 +1109,17 @@
         </p>
       </div>
 
-      <div class="space-y-3.5 sm:space-y-4">
+      <div class="space-y-4">
         
         <!-- Pergunta 1: Geofencing e Postos -->
-        <details class="glass-card rounded-2xl p-4 sm:p-5 group transition-all duration-200" open>
+        <details class="glass-card-pro rounded-2xl p-5 sm:p-6 group transition-all duration-200 reveal-item" open>
           <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer list-none">
             <span>O que é o Geofencing nos postos e como ele funciona?</span>
-            <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-2">
+            <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-3">
               <i class="bi bi-chevron-down text-xl"></i>
             </span>
           </summary>
-          <div class="text-slate-300 text-xs sm:text-sm mt-3 pt-3 border-t border-white/5 leading-relaxed space-y-2">
+          <div class="text-slate-300 text-xs sm:text-sm mt-3.5 pt-3.5 border-t border-white/5 leading-relaxed space-y-2">
             <p>
               <strong>Geofencing</strong> é a maior vantagem do Next Facilities. Trata-se de uma cerca virtual delimitada por GPS em volta de cada posto de trabalho cadastrado.
             </p>
@@ -1051,27 +1130,27 @@
         </details>
 
         <!-- Pergunta 2: Tarefas Recorrentes e Extras -->
-        <details class="glass-card rounded-2xl p-4 sm:p-5 group transition-all duration-200">
+        <details class="glass-card-pro rounded-2xl p-5 sm:p-6 group transition-all duration-200 reveal-item">
           <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer list-none">
             <span>Como funcionam as tarefas recorrentes e extras?</span>
-            <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-2">
+            <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-3">
               <i class="bi bi-chevron-down text-xl"></i>
             </span>
           </summary>
-          <p class="text-slate-400 text-xs sm:text-sm mt-3 pt-3 border-t border-white/5 leading-relaxed">
+          <p class="text-slate-400 text-xs sm:text-sm mt-3.5 pt-3.5 border-t border-white/5 leading-relaxed">
             As <strong>tarefas recorrentes</strong> são as rotinas padrão (como limpezas, rondas ou checagens de equipamentos) que aparecem automaticamente no aplicativo logo após o registro do ponto de entrada no posto. Já as <strong>tarefas extras</strong> são demandas pontuais ou chamados de emergência enviados pela supervisão ou gestão em tempo real.
           </p>
         </details>
 
         <!-- Pergunta 3: Qual a diferença entre os 2 Aplicativos -->
-        <details class="glass-card rounded-2xl p-4 sm:p-5 group transition-all duration-200">
+        <details class="glass-card-pro rounded-2xl p-5 sm:p-6 group transition-all duration-200 reveal-item">
           <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer list-none">
             <span>Qual a diferença entre o App Colaborador-Supervisor e o App Gestor?</span>
-            <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-2">
+            <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-3">
               <i class="bi bi-chevron-down text-xl"></i>
             </span>
           </summary>
-          <div class="text-slate-300 text-xs sm:text-sm mt-3 pt-3 border-t border-white/5 leading-relaxed space-y-2">
+          <div class="text-slate-300 text-xs sm:text-sm mt-3.5 pt-3.5 border-t border-white/5 leading-relaxed space-y-2">
             <p>
               O <strong>App Colaborador-Supervisor</strong> é focado na execução em campo: marcação de ponto eletrônico com validação no raio do posto, rotina de tarefas recorrentes, rondas com QR Code e envio de evidências fotográficas.
             </p>
@@ -1082,14 +1161,14 @@
         </details>
 
         <!-- Pergunta 4: Primeiro Acesso -->
-        <details class="glass-card rounded-2xl p-4 sm:p-5 group transition-all duration-200">
+        <details class="glass-card-pro rounded-2xl p-5 sm:p-6 group transition-all duration-200 reveal-item">
           <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer list-none">
             <span>Como realizo meu primeiro acesso no aplicativo?</span>
-            <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-2">
+            <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-3">
               <i class="bi bi-chevron-down text-xl"></i>
             </span>
           </summary>
-          <div class="text-slate-300 text-xs sm:text-sm mt-3 pt-3 border-t border-white/5 leading-relaxed space-y-2">
+          <div class="text-slate-300 text-xs sm:text-sm mt-3.5 pt-3.5 border-t border-white/5 leading-relaxed space-y-2">
             <p>
               Todos os colaboradores são previamente cadastrados no sistema pela coordenação ou pelos supervisores.
             </p>
@@ -1103,14 +1182,14 @@
         </details>
 
         <!-- Pergunta 5: Evidências Fotográficas -->
-        <details class="glass-card rounded-2xl p-4 sm:p-5 group transition-all duration-200">
+        <details class="glass-card-pro rounded-2xl p-5 sm:p-6 group transition-all duration-200 reveal-item">
           <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer list-none">
             <span>Por que é necessário registrar fotos de evidência?</span>
-            <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-2">
+            <span class="text-orange-400 group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-3">
               <i class="bi bi-chevron-down text-xl"></i>
             </span>
           </summary>
-          <p class="text-slate-400 text-xs sm:text-sm mt-3 pt-3 border-t border-white/5 leading-relaxed">
+          <p class="text-slate-400 text-xs sm:text-sm mt-3.5 pt-3.5 border-t border-white/5 leading-relaxed">
             As evidências fotográficas são a garantia visual de que a tarefa ou ronda foi executada com excelência. Elas protegem o próprio colaborador em auditorias e garantem a entrega de qualidade contratada pelos clientes do Next Facilities.
           </p>
         </details>
@@ -1119,24 +1198,25 @@
 
     </section>
 
-    <!-- BANNER FINAL DE DOWNLOAD -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 text-center">
-      <div class="p-8 sm:p-14 rounded-[28px] sm:rounded-[36px] brand-gradient-bg relative overflow-hidden shadow-2xl shadow-orange-500/25 text-white">
+    <!-- BANNER FINAL DE DOWNLOAD COM SHIMMER -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 text-center">
+      <div class="p-9 sm:p-16 rounded-[32px] sm:rounded-[44px] brand-gradient-bg relative overflow-hidden shadow-2xl shadow-orange-500/30 text-white reveal-item">
         
-        <div class="absolute -top-24 -right-24 w-72 h-72 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
-        <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-black/10 rounded-full blur-xl pointer-events-none"></div>
+        <div class="absolute -top-24 -right-24 w-80 h-80 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-black/15 rounded-full blur-2xl pointer-events-none"></div>
 
-        <div class="relative z-10 max-w-2xl mx-auto space-y-5 sm:space-y-6">
-          <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight">
+        <div class="relative z-10 max-w-2xl mx-auto space-y-6">
+          <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
             Pronto para transformar sua operação e gestão?
           </h2>
           <p class="text-orange-100 text-sm sm:text-lg leading-relaxed">
             Baixe o aplicativo oficial v1.0.0, ative seu acesso e tenha postos com Geofencing, tarefas recorrentes e evidências fotográficas no seu celular.
           </p>
           
-          <div class="pt-2">
-            <a href="next-facilities-colaborador-supervisor-v1.0.0.apk" download="next-facilities-colaborador-supervisor-v1.0.0.apk" id="footerDownloadBtn" class="inline-flex items-center gap-3.5 bg-slate-950 text-white hover:bg-slate-900 font-extrabold text-sm sm:text-base px-7 sm:px-9 py-4 rounded-2xl shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all">
-              <i class="bi bi-download text-orange-400 text-2xl"></i>
+          <div class="pt-3">
+            <a href="next-facilities-colaborador-supervisor-v1.0.0.apk" download="next-facilities-colaborador-supervisor-v1.0.0.apk" id="footerDownloadBtn" class="group relative inline-flex items-center gap-4 bg-slate-950 text-white hover:bg-slate-900 font-extrabold text-sm sm:text-base px-8 sm:px-10 py-4 sm:py-5 rounded-2xl shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all overflow-hidden">
+              <div class="btn-shimmer"></div>
+              <i class="bi bi-download text-orange-400 text-2xl group-hover:translate-y-0.5 transition-transform"></i>
               <span id="footerBtnText">Baixar APK Colaborador-Supervisor (97.5 MB)</span>
             </a>
           </div>
@@ -1147,11 +1227,11 @@
   </main>
 
   <!-- RODAPÉ -->
-  <footer class="border-t border-white/5 bg-[#080B11] py-10 sm:py-12">
+  <footer class="border-t border-white/5 bg-[#060910] py-10 sm:py-14">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
       
-      <div class="flex items-center gap-3">
-        <img src="assets/icons/logo-icon.png" alt="Logo Next Facilities" class="w-9 h-9 object-contain" />
+      <div class="flex items-center gap-3.5">
+        <img src="assets/icons/logo-icon.png" alt="Logo Next Facilities" class="w-10 h-10 object-contain" />
         <div>
           <span class="text-sm font-bold text-white tracking-wide">NEXT FACILITIES</span>
           <p class="text-xs text-slate-500 mt-0.5">© 2026 Next Facilities. Hospedado em nextfacilities.inovagui.com.br.</p>
@@ -1159,11 +1239,11 @@
       </div>
 
       <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
-        <a href="#download" class="hover:text-orange-400 transition-colors">Download</a>
-        <a href="#postos-geofencing" class="hover:text-orange-400 transition-colors">Postos & Geofencing</a>
-        <a href="#recursos" class="hover:text-orange-400 transition-colors">Recursos</a>
-        <a href="#primeiro-acesso" class="hover:text-orange-400 transition-colors">Primeiro Acesso</a>
-        <a href="#faq" class="hover:text-orange-400 transition-colors">Dúvidas</a>
+        <a href="#download" class="hover:text-orange-400 transition-colors font-medium">Download</a>
+        <a href="#postos-geofencing" class="hover:text-orange-400 transition-colors font-medium">Postos & Geofencing</a>
+        <a href="#recursos" class="hover:text-orange-400 transition-colors font-medium">Recursos</a>
+        <a href="#primeiro-acesso" class="hover:text-orange-400 transition-colors font-medium">Primeiro Acesso</a>
+        <a href="#faq" class="hover:text-orange-400 transition-colors font-medium">Dúvidas</a>
       </div>
 
     </div>
@@ -1171,7 +1251,7 @@
 
   <!-- BARRA FIXA DE DOWNLOAD NO MOBILE AO ROLAR -->
   <div id="stickyBottomBar" class="fixed bottom-0 inset-x-0 p-3 safe-bottom-padding bg-slate-950/95 border-t border-white/10 backdrop-blur-2xl z-40 transform translate-y-full transition-transform duration-300 sm:hidden shadow-2xl">
-    <div class="flex items-center justify-between gap-2 max-w-md mx-auto">
+    <div class="flex items-center justify-between gap-2.5 max-w-md mx-auto">
       <div class="flex items-center gap-2.5">
         <img src="assets/icons/logo-icon.png" alt="Next Facilities" class="w-8 h-8 object-contain rounded-lg" />
         <div class="text-left">
@@ -1186,13 +1266,13 @@
     </div>
   </div>
 
-  <!-- JAVASCRIPT DINÂMICO PARA SELEÇÃO E SINCRONIZAÇÃO TOTAL DO HEADER E DA PÁGINA -->
+  <!-- JAVASCRIPT DINÂMICO PARA SELEÇÃO, ANIMAÇÕES E SINCRONIZAÇÃO TOTAL -->
   <script>
     const PROFILES = {
       'colaborador-supervisor': {
         name: 'Colaborador-Supervisor',
         heroTitle: 'Colaborador & Supervisor',
-        headerTag: '<i class="bi bi-person-badge text-xs"></i><span>App Colaborador-Supervisor</span>',
+        headerTag: '<i class="bi bi-person-badge text-xs text-orange-400"></i><span>App Colaborador-Supervisor</span>',
         description: 'A maior vantagem em campo: <strong>postos com Geofencing</strong> (raio de segurança autorizado), execução de <strong>tarefas recorrentes e extras</strong>, rondas com QR Code e comprovação por <strong>evidências fotográficas</strong>.',
         apkFile: 'next-facilities-colaborador-supervisor-v1.0.0.apk',
         downloadUrl: 'https://nextfacilities.inovagui.com.br/next-facilities-colaborador-supervisor-v1.0.0.apk',
@@ -1205,7 +1285,7 @@
       'gestor': {
         name: 'Gestor',
         heroTitle: 'Gestor',
-        headerTag: '<i class="bi bi-briefcase text-xs"></i><span>App Gestor</span>',
+        headerTag: '<i class="bi bi-briefcase text-xs text-orange-400"></i><span>App Gestor</span>',
         description: 'Controle gerencial completo: acompanhamento de <strong>equipes e turnos em tempo real</strong>, parametrização de <strong>postos e raios de Geofencing</strong>, aprovação de tarefas extras e auditoria de evidências fotográficas.',
         apkFile: 'next-facilities-gestor-v1.0.0.apk',
         downloadUrl: 'https://nextfacilities.inovagui.com.br/next-facilities-gestor-v1.0.0.apk',
@@ -1224,124 +1304,136 @@
       const data = PROFILES[profileKey];
       if (!data) return;
 
-      // Elementos do Header
-      const headerAppTag = document.getElementById('headerAppTag');
-      const headerTabColab = document.getElementById('headerTabColaborador');
-      const headerTabGest = document.getElementById('headerTabGestor');
-      const topNavBtn = document.getElementById('topNavDownloadBtn');
-      const topNavBtnText = document.getElementById('topNavBtnText');
-
-      // Elementos Mobile Menu
-      const mobileTabColab = document.getElementById('mobileTabColaborador');
-      const mobileTabGest = document.getElementById('mobileTabGestor');
-      const mobileMenuDownloadBtn = document.getElementById('mobileMenuDownloadBtn');
-      const mobileMenuBtnText = document.getElementById('mobileMenuBtnText');
-
-      // Elementos do Hero e Card Central
-      const tabColab = document.getElementById('tabColaboradorBtn');
-      const tabGest = document.getElementById('tabGestorBtn');
-      const heroProfileName = document.getElementById('heroProfileName');
-      const heroDescription = document.getElementById('heroDescription');
-      const mainBtn = document.getElementById('mainDownloadBtn');
-      const btnMaintext = document.getElementById('btnMaintext');
-      const footerBtn = document.getElementById('footerDownloadBtn');
-      const footerBtnText = document.getElementById('footerBtnText');
-      const packageBadge = document.getElementById('packageBadge');
-      const qrCodeImg = document.getElementById('qrCodeImg');
-      const qrCodeLabel = document.getElementById('qrCodeLabel');
-      const stickyBtn = document.getElementById('stickyDownloadBtn');
-      const stickySub = document.getElementById('stickySubtitle');
-
-      // Atualizar Header Subtitle
-      if (headerAppTag) {
-        headerAppTag.innerHTML = data.headerTag;
+      // Animação de fade rápida no hero wrapper para transição suave
+      const heroWrapper = document.getElementById('heroContentWrapper');
+      if (heroWrapper) {
+        heroWrapper.classList.add('fading');
       }
 
-      // Estilo das Abas no Header (Desktop)
-      if (headerTabColab && headerTabGest) {
-        if (profileKey === 'colaborador-supervisor') {
-          headerTabColab.className = 'flex items-center gap-2 py-1.5 px-3.5 rounded-xl text-xs font-bold brand-gradient-bg text-white shadow transition-all';
-          headerTabGest.className = 'flex items-center gap-2 py-1.5 px-3.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition-all';
-        } else {
-          headerTabGest.className = 'flex items-center gap-2 py-1.5 px-3.5 rounded-xl text-xs font-bold brand-gradient-bg text-white shadow transition-all';
-          headerTabColab.className = 'flex items-center gap-2 py-1.5 px-3.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition-all';
+      setTimeout(() => {
+        // Elementos do Header
+        const headerAppTag = document.getElementById('headerAppTag');
+        const headerTabColab = document.getElementById('headerTabColaborador');
+        const headerTabGest = document.getElementById('headerTabGestor');
+        const topNavBtn = document.getElementById('topNavDownloadBtn');
+        const topNavBtnText = document.getElementById('topNavBtnText');
+
+        // Elementos Mobile Menu
+        const mobileTabColab = document.getElementById('mobileTabColaborador');
+        const mobileTabGest = document.getElementById('mobileTabGestor');
+        const mobileMenuDownloadBtn = document.getElementById('mobileMenuDownloadBtn');
+        const mobileMenuBtnText = document.getElementById('mobileMenuBtnText');
+
+        // Elementos do Hero e Card Central
+        const tabColab = document.getElementById('tabColaboradorBtn');
+        const tabGest = document.getElementById('tabGestorBtn');
+        const heroProfileName = document.getElementById('heroProfileName');
+        const heroDescription = document.getElementById('heroDescription');
+        const mainBtn = document.getElementById('mainDownloadBtn');
+        const btnMaintext = document.getElementById('btnMaintext');
+        const footerBtn = document.getElementById('footerDownloadBtn');
+        const footerBtnText = document.getElementById('footerBtnText');
+        const packageBadge = document.getElementById('packageBadge');
+        const qrCodeImg = document.getElementById('qrCodeImg');
+        const qrCodeLabel = document.getElementById('qrCodeLabel');
+        const stickyBtn = document.getElementById('stickyDownloadBtn');
+        const stickySub = document.getElementById('stickySubtitle');
+
+        // Atualizar Header Subtitle
+        if (headerAppTag) {
+          headerAppTag.innerHTML = data.headerTag;
         }
-      }
 
-      // Estilo das Abas no Menu Mobile
-      if (mobileTabColab && mobileTabGest) {
-        if (profileKey === 'colaborador-supervisor') {
-          mobileTabColab.className = 'flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-bold brand-gradient-bg text-white';
-          mobileTabGest.className = 'flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-semibold text-slate-400';
-        } else {
-          mobileTabGest.className = 'flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-bold brand-gradient-bg text-white';
-          mobileTabColab.className = 'flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-semibold text-slate-400';
+        // Estilo das Abas no Header (Desktop)
+        if (headerTabColab && headerTabGest) {
+          if (profileKey === 'colaborador-supervisor') {
+            headerTabColab.className = 'flex items-center gap-2 py-1.5 px-4 rounded-xl text-xs font-bold brand-gradient-bg text-white shadow-md transition-all';
+            headerTabGest.className = 'flex items-center gap-2 py-1.5 px-4 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-100 transition-all';
+          } else {
+            headerTabGest.className = 'flex items-center gap-2 py-1.5 px-4 rounded-xl text-xs font-bold brand-gradient-bg text-white shadow-md transition-all';
+            headerTabColab.className = 'flex items-center gap-2 py-1.5 px-4 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-100 transition-all';
+          }
         }
-      }
 
-      // Atualizar Botão Superior no Header
-      if (topNavBtn) {
-        topNavBtn.href = data.apkFile;
-        topNavBtn.setAttribute('download', data.apkFile);
-      }
-      if (topNavBtnText) {
-        topNavBtnText.innerText = data.topBtnText;
-      }
-
-      // Atualizar Botão do Menu Mobile
-      if (mobileMenuDownloadBtn) {
-        mobileMenuDownloadBtn.href = data.apkFile;
-        mobileMenuDownloadBtn.setAttribute('download', data.apkFile);
-      }
-      if (mobileMenuBtnText) {
-        mobileMenuBtnText.innerText = data.topBtnText;
-      }
-
-      // Estilo das Abas no Hero
-      if (tabColab && tabGest) {
-        if (profileKey === 'colaborador-supervisor') {
-          tabColab.className = 'flex-1 flex items-center justify-center gap-2.5 py-3 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-bold brand-gradient-bg text-white shadow-md transition-all';
-          tabGest.className = 'flex-1 flex items-center justify-center gap-2.5 py-3 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-200 transition-all';
-        } else {
-          tabGest.className = 'flex-1 flex items-center justify-center gap-2.5 py-3 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-bold brand-gradient-bg text-white shadow-md transition-all';
-          tabColab.className = 'flex-1 flex items-center justify-center gap-2.5 py-3 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-200 transition-all';
+        // Estilo das Abas no Menu Mobile
+        if (mobileTabColab && mobileTabGest) {
+          if (profileKey === 'colaborador-supervisor') {
+            mobileTabColab.className = 'flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-bold brand-gradient-bg text-white shadow';
+            mobileTabGest.className = 'flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-semibold text-slate-400';
+          } else {
+            mobileTabGest.className = 'flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-bold brand-gradient-bg text-white shadow';
+            mobileTabColab.className = 'flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-semibold text-slate-400';
+          }
         }
-      }
 
-      // Atualizar Textos e Títulos
-      if (heroProfileName) heroProfileName.innerText = data.heroTitle;
-      if (heroDescription) heroDescription.innerHTML = data.description;
-      
-      // Atualizar Botão Central
-      if (mainBtn) {
-        mainBtn.href = data.apkFile;
-        mainBtn.setAttribute('download', data.apkFile);
-      }
-      if (btnMaintext) btnMaintext.innerText = data.btnText;
+        // Atualizar Botão Superior no Header
+        if (topNavBtn) {
+          topNavBtn.href = data.apkFile;
+          topNavBtn.setAttribute('download', data.apkFile);
+        }
+        if (topNavBtnText) {
+          topNavBtnText.innerText = data.topBtnText;
+        }
 
-      // Atualizar Botão Rodapé
-      if (footerBtn) {
-        footerBtn.href = data.apkFile;
-        footerBtn.setAttribute('download', data.apkFile);
-      }
-      if (footerBtnText) footerBtnText.innerText = data.btnText;
+        // Atualizar Botão do Menu Mobile
+        if (mobileMenuDownloadBtn) {
+          mobileMenuDownloadBtn.href = data.apkFile;
+          mobileMenuDownloadBtn.setAttribute('download', data.apkFile);
+        }
+        if (mobileMenuBtnText) {
+          mobileMenuBtnText.innerText = data.topBtnText;
+        }
 
-      // Atualizar Metadados e QR Code
-      if (packageBadge) packageBadge.innerText = data.packageId;
-      if (qrCodeLabel) qrCodeLabel.innerText = data.qrLabel;
+        // Estilo das Abas no Hero
+        if (tabColab && tabGest) {
+          if (profileKey === 'colaborador-supervisor') {
+            tabColab.className = 'flex-1 flex items-center justify-center gap-2.5 py-3 px-3 sm:px-5 rounded-xl text-xs sm:text-sm font-extrabold brand-gradient-bg text-white shadow-lg transition-all duration-300';
+            tabGest.className = 'flex-1 flex items-center justify-center gap-2.5 py-3 px-3 sm:px-5 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-100 transition-all duration-300';
+          } else {
+            tabGest.className = 'flex-1 flex items-center justify-center gap-2.5 py-3 px-3 sm:px-5 rounded-xl text-xs sm:text-sm font-extrabold brand-gradient-bg text-white shadow-lg transition-all duration-300';
+            tabColab.className = 'flex-1 flex items-center justify-center gap-2.5 py-3 px-3 sm:px-5 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-100 transition-all duration-300';
+          }
+        }
 
-      if (qrCodeImg) {
-        qrCodeImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(data.downloadUrl)}`;
-      }
+        // Atualizar Textos e Títulos
+        if (heroProfileName) heroProfileName.innerText = data.heroTitle;
+        if (heroDescription) heroDescription.innerHTML = data.description;
+        
+        // Atualizar Botão Central
+        if (mainBtn) {
+          mainBtn.href = data.apkFile;
+          mainBtn.setAttribute('download', data.apkFile);
+        }
+        if (btnMaintext) btnMaintext.innerText = data.btnText;
 
-      // Atualizar Barra Fixa no Mobile
-      if (stickyBtn) {
-        stickyBtn.href = data.apkFile;
-        stickyBtn.setAttribute('download', data.apkFile);
-      }
-      if (stickySub) {
-        stickySub.innerText = `${data.name} • ${data.sizeMB}`;
-      }
+        // Atualizar Botão Rodapé
+        if (footerBtn) {
+          footerBtn.href = data.apkFile;
+          footerBtn.setAttribute('download', data.apkFile);
+        }
+        if (footerBtnText) footerBtnText.innerText = data.btnText;
+
+        // Atualizar Metadados e QR Code
+        if (packageBadge) packageBadge.innerText = data.packageId;
+        if (qrCodeLabel) qrCodeLabel.innerText = data.qrLabel;
+
+        if (qrCodeImg) {
+          qrCodeImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(data.downloadUrl)}`;
+        }
+
+        // Atualizar Barra Fixa no Mobile
+        if (stickyBtn) {
+          stickyBtn.href = data.apkFile;
+          stickyBtn.setAttribute('download', data.apkFile);
+        }
+        if (stickySub) {
+          stickySub.innerText = `${data.name} • ${data.sizeMB}`;
+        }
+
+        if (heroWrapper) {
+          heroWrapper.classList.remove('fading');
+        }
+      }, 150);
     }
 
     // Copiar Link do Perfil Atual
@@ -1387,9 +1479,30 @@
       }
     });
 
-    // Inicializar com o padrão: colaborador-supervisor
+    // Animações de Revelação por Scroll (Intersection Observer)
     window.addEventListener('DOMContentLoaded', () => {
       selectAppProfile('colaborador-supervisor');
+
+      const revealElements = document.querySelectorAll('.reveal-item');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                entry.target.classList.add('revealed');
+              }, 60);
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.12,
+          rootMargin: '0px 0px -40px 0px'
+        });
+
+        revealElements.forEach(el => observer.observe(el));
+      } else {
+        revealElements.forEach(el => el.classList.add('revealed'));
+      }
     });
   </script>
 </body>
