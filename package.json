@@ -1,7 +1,7 @@
 {
   "name": "nextfacilities-landing-page",
   "version": "1.0.0",
-  "description": "Portal oficial de download e apresentação dos aplicativos móveis Next Facilities para Android (Operacional e Gestão)",
+  "description": "Portal oficial de download e apresentação dos aplicativos móveis Next Facilities para Android (Colaborador-Supervisor e Gestor)",
   "homepage": "https://nextfacilities.inovagui.com.br/",
   "main": "index.html",
   "repository": {
@@ -9,36 +9,33 @@
     "url": "https://github.com/InovaGui/nextfacilities.git"
   },
   "apps": {
-    "operacional": {
+    "colaboradorSupervisor": {
       "id": "com.inovagui.nextfacilities",
-      "displayName": "Next Facilities Operacional",
+      "displayName": "Next Facilities Colaborador-Supervisor",
       "version": "1.0.0",
       "buildNumber": 1,
       "minAndroidVersion": "8.0 (API 26)",
-      "apkFile": "next-facilities-operacional-v1.0.0.apk",
-      "downloadUrl": "https://nextfacilities.inovagui.com.br/next-facilities-operacional-v1.0.0.apk",
+      "apkFile": "next-facilities-colaborador-supervisor-v1.0.0.apk",
+      "downloadUrl": "https://nextfacilities.inovagui.com.br/next-facilities-colaborador-supervisor-v1.0.0.apk",
       "fileSizeBytes": 102216302,
       "fileSizeMB": 97.48,
       "targetProfiles": [
         "Colaborador",
-        "Quarteirizado / Terceirizado",
-        "Supervisor de Campo"
+        "Supervisor"
       ]
     },
-    "gestao": {
-      "id": "com.inovagui.nextfacilities.gestao",
-      "displayName": "Next Facilities Gestão & Coordenação",
+    "gestor": {
+      "id": "com.inovagui.nextfacilities.gestor",
+      "displayName": "Next Facilities Gestor",
       "version": "1.0.0",
       "buildNumber": 1,
       "minAndroidVersion": "8.0 (API 26)",
-      "apkFile": "next-facilities-gestao-v1.0.0.apk",
-      "downloadUrl": "https://nextfacilities.inovagui.com.br/next-facilities-gestao-v1.0.0.apk",
+      "apkFile": "next-facilities-gestor-v1.0.0.apk",
+      "downloadUrl": "https://nextfacilities.inovagui.com.br/next-facilities-gestor-v1.0.0.apk",
       "fileSizeBytes": 106796870,
       "fileSizeMB": 101.85,
       "targetProfiles": [
-        "Coordenador",
-        "Gestor de Contratos",
-        "Administrador Geral"
+        "Gestor"
       ]
     }
   },
@@ -54,8 +51,9 @@
     "nextfacilities",
     "inovagui",
     "facilities",
-    "gestao",
-    "coordenacao",
+    "colaborador",
+    "supervisor",
+    "gestor",
     "geofencing",
     "postos",
     "postos-de-trabalho",
